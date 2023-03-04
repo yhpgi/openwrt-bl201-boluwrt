@@ -14,10 +14,13 @@ Tambahan Aplikasi :
 
 Dengan tema Argon yang dikustomisasi agar dapat berjalan di LEDE 17 sebagai default.
 
-- Password login : (kosong)
-- Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
-- Default IP : 192.168.1.1
+-  Password login : (kosong)
+-  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
+-  Default IP : 192.168.1.1
 
-### *Source code nunggu internet cepet buat diupload ><
+### TODO :
+++ Fix Kernel di build openwrt 18.06.0 ke atas
+
+#### *Source code nunggu internet cepet buat diupload ><
 
 Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/main
