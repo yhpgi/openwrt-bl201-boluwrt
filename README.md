@@ -2,6 +2,12 @@
 
 OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
+>  Password login : (kosong)
+
+>  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
+
+>  Default IP : 192.168.1.1
+
 ### Changelog 
 
 #### BoluWrt 1.1
@@ -22,10 +28,6 @@ Tambahan Aplikasi :
 2. luci-app-sqm
 
 Dengan tema Argon yang dikustomisasi agar dapat berjalan di LEDE 17 sebagai default.
-
->  Password login : (kosong)
->  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
->  Default IP : 192.168.1.1
 
 ### TODO :
 [x] Fix Kernel di build openwrt 18.06.0 ke atas
