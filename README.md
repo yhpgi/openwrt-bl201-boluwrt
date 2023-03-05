@@ -28,14 +28,14 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
   #### BoluWrt 1.0
 
-    Based on LEDE 17.01.0 r3205-59508e3 dengan beberapa perubahan pada kernel untuk optimalisasi driver WiFi.
-
+    Based on LEDE 17.01.0 r3205-59508e3 
+    dengan beberapa perubahan pada kernel untuk optimalisasi driver WiFi.
+    
     Dasar software : Xiaomi MiWifi Mini
-
     Tambahan Aplikasi :
       1. luci-app-vnstat
       2. luci-app-sqm
-
+      
     Dengan tema Argon yang dikustomisasi agar dapat berjalan di LEDE 17 sebagai default.
 
 ### Known Bugs :
