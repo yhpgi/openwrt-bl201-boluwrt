@@ -2,7 +2,16 @@
 
 OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
-### BoluWrt 1.0
+### Changelog 
+
+#### BoluWrt 1.1
+
+1. Mengoptimalkan driver WiFi
+2. Tambahan fitur pada LED
+3. Fix nama firmware
+4. Didasarkan pada Xiaomi WiFi Mini
+
+#### BoluWrt 1.0
 
 Based on LEDE 17.01.0 r3205-59508e3 dengan beberapa perubahan pada kernel untuk optimalisasi driver WiFi.
 
@@ -14,12 +23,12 @@ Tambahan Aplikasi :
 
 Dengan tema Argon yang dikustomisasi agar dapat berjalan di LEDE 17 sebagai default.
 
--  Password login : (kosong)
--  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
--  Default IP : 192.168.1.1
+>  Password login : (kosong)
+>  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
+>  Default IP : 192.168.1.1
 
 ### TODO :
-++ Fix Kernel di build openwrt 18.06.0 ke atas
+[x] Fix Kernel di build openwrt 18.06.0 ke atas
 
 #### *Source code nunggu internet cepet buat diupload ><
 
