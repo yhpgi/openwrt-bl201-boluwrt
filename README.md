@@ -43,11 +43,12 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ### TODO :
   [-] Fix LuCi yang rusak saat menggunakan tema Bootsrap
+    
     > Solusi sementara (melalui SSH) jika terlanjur / tidak sengaja mengganti ke tema bootsrap
- 
-      uci set luci.themes.Argon=/luci-static/argon
-      uci set luci.main.mediaurbase=/luci-static/argon
-      uci commit luci
+      
+    uci set luci.themes.Argon=/luci-static/argon
+    uci set luci.main.mediaurbase=/luci-static/argon
+    uci commit luci
     
     
   [x] Fix Kernel di build openwrt 18.06.0 ke atas
