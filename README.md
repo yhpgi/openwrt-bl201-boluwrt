@@ -45,4 +45,4 @@ Dengan tema Argon yang dikustomisasi agar dapat berjalan di LEDE 17 sebagai defa
 
 #### *Source code nunggu internet cepet buat diupload ><
 
-Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/main
+Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
