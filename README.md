@@ -2,11 +2,11 @@
 
 OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
->  Password login : (kosong)
-
->  Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
-
->  Default IP : 192.168.1.1
+```
+Password login : (kosong)
+Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
+Default IP : 192.168.1.1
+```
 
 ### Screenshoot
 
@@ -43,16 +43,20 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ### TODO :
   [-] Fix LuCi yang rusak saat menggunakan tema Bootsrap
-    
-    > Solusi sementara (melalui SSH) jika terlanjur / tidak sengaja mengganti ke tema bootsrap
-      
-    uci set luci.themes.Argon=/luci-static/argon
-    uci set luci.main.mediaurbase=/luci-static/argon
-    uci commit luci
-    
+
+> Solusi sementara (melalui SSH) jika terlanjur / tidak sengaja mengganti ke tema bootsrap
+
+
+```
+uci set luci.themes.Argon=/luci-static/argon
+uci set luci.main.mediaurbase=/luci-static/argon
+uci commit luci
+```
     
   [x] Fix Kernel di build openwrt 18.06.0 ke atas
 
-#### *Source code nunggu internet cepet buat diupload ><
+> *Source code nunggu internet cepet buat diupload ><
 
 Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
+
+Link berguna : https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk
