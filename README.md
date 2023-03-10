@@ -42,7 +42,7 @@ Default IP : 192.168.1.1
   1. LuCi rusak jika menggunakan tema Bootstrap
 
 ### TODO :
-  [-] Fix LuCi yang rusak saat menggunakan tema Bootsrap
+-  [x] Fix LuCi yang rusak saat menggunakan tema Bootsrap
 
 > Solusi sementara (melalui SSH) jika terlanjur / tidak sengaja mengganti ke tema bootsrap
 
@@ -53,9 +53,9 @@ uci set luci.main.mediaurbase=/luci-static/argon
 uci commit luci
 ```
     
-  [x] Fix Kernel di build openwrt 18.06.0 ke atas
+-  [ ] Fix Kernel di build openwrt 18.06.0 ke atas
 
-> *Source code nunggu internet cepet buat diupload ><
+> Source code nunggu internet cepet buat diupload ><
 
 Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
 
