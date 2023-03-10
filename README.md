@@ -55,7 +55,17 @@ uci commit luci
     
 -  [ ] Fix Kernel di build openwrt 18.06.0 ke atas
 
-> Source code nunggu internet cepet buat diupload ><
+### Penginstalan
+
+Instal menggunakan `Breed-web` (https://breed.hackpascal.net) atau langsung melalui `sysupgrade` jika sudah menggunakan Openwrt sebelumnya.
+
+> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`
+
+> Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi ini, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web.
+
+> Alamat IP Breed-web adalah `192.168.1.1`
+
+##### Source code nunggu internet cepet buat diupload ><
 
 Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
 
