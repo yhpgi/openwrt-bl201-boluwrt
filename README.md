@@ -2,12 +2,6 @@
 
 OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
-```
-Password login : (kosong)
-Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
-Default IP : 192.168.1.1
-```
-
 ### Screenshoot
 
 ![image.png](https://github.com/yHpgi/openwrt-bl201-boluwrt/blob/34ca0acba0102bb9f5b5dd5bafa2131d24ccd43d/screenshoot/image.png)
@@ -17,7 +11,7 @@ Default IP : 192.168.1.1
 ![image.png](https://github.com/yHpgi/openwrt-bl201-boluwrt/blob/111c61e391a00800cc3ac89778ea4e1c9cac35f9/screenshoot/kernel_log.PNG)
 
 
-### Changelog 
+### Changelog :
 
   #### BoluWrt 1.1
 
@@ -55,13 +49,27 @@ uci commit luci
     
 -  [ ] Fix Kernel di build openwrt 18.06.0 ke atas
 
-### Penginstalan
+### Penginstalan :
+
+#### 1. Menggunakan Breed-Web
 
 Instal menggunakan `Breed-web` (https://breed.hackpascal.net) atau langsung melalui `sysupgrade` jika sudah menggunakan Openwrt sebelumnya.
 
-> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi ini, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. Alamat IP Breed-web adalah `192.168.1.1`
+> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi ini, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
 
-##### Source code nunggu internet cepet buat diupload ><
+#### 2. Menggunakan USB Programmer
+
+Unduh file full image di halaman rilis, kemudian flash menggunakan usb programmer langsung ke chip eeprom.
+
+### Lain-lain :
+
+```
+Password login : (kosong)
+Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
+Default IP : 192.168.1.1
+```
+
+> Source code nunggu internet cepet buat diupload ><
 
 Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
 
