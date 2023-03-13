@@ -53,13 +53,49 @@ uci commit luci
 
 #### 1. Menggunakan Breed-Web
 
-Instal menggunakan `Breed-web` (https://breed.hackpascal.net) atau langsung melalui `sysupgrade` jika sudah menggunakan Openwrt sebelumnya.
+- Instal [Breed-web](https://breed.hackpascal.net)
 
-> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi `breed-mt7620-reset26.bin`, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
+> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi `breed-mt7620-reset26.bin`, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. 
+
+> Harap berhati-hati saat menggunakan Breed-web. karena hanya tersedia dalam bahasa mandarin. pastikan Anda paham menu apa yang Anda klik.
+
+- Masuk ke halaman Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
+
+- Masuk ke menu upgrade lalu masukkan file sysupgeade pada kolom kedua dan eeprom pada kolom ketiga.
+
+- Lalu klik mulai. konfirmasi penginstallan dan tunggu proses flashing berjalan hingga selesai.
 
 #### 2. Menggunakan USB Programmer
 
 Unduh file full image di halaman rilis, kemudian flash menggunakan usb programmer langsung ke chip eeprom.
+
+#### 3. Menggunakan Openwrt sysupgrade
+
+Bisa langsung melalui menu LuCi atau menggunakan cara dibawah, melalui SSH.
+
+> Windows :
+  
+  Aplikasi yang diperlukan :
+  
+   1. [Putty](https://www.putty.org/)
+   2. [WinScp](https://winscp.net/eng/download.php)
+    
+  Langkah-langkah :
+  
+  1. Login ke perangkat melalui WinScp dengan username dan password Openwrt anda;
+  2. Unggah file sysupgrade ke folder `/tmp/` menggunakan WinScp;
+  3. Lalu buka putty, Login;
+  4. ketikkan perintah berikut :
+     `sysupgrade -v -F -n /tmp/boluwrt-blablabla.bin`
+  5. tekan Enter. dan tunggu proses flashing hingga selesai.
+
+> Linux :
+
+  - TODO
+  
+> Mac :
+
+  - TODO
 
 ### Lain-lain :
 
@@ -71,6 +107,6 @@ Default IP : 192.168.1.1
 
 > Source code nunggu internet cepet buat diupload ><
 
-Download Link : https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/
+[Download Link](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/)
 
-Link berguna : https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk
+[Link berguna](https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk)
