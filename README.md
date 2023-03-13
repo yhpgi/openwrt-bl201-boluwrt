@@ -13,7 +13,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ### Changelog :
 
-  #### BoluWrt 1.1
+  #### BoluWrt 1.1 | Terbaru
 
     1. Mengoptimalkan driver WiFi
     2. Tambahan fitur pada LED
@@ -55,7 +55,7 @@ uci commit luci
 
 Instal menggunakan `Breed-web` (https://breed.hackpascal.net) atau langsung melalui `sysupgrade` jika sudah menggunakan Openwrt sebelumnya.
 
-> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi ini, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
+> Breed-web bisa menggunakan milik `Xiaomi-miwifi-mini` dan `Yuoku-YK1`. Bisa juga menggunakan versi `breed-mt7620-reset26.bin`. jika menggunakan versi `breed-mt7620-reset26.bin`, tahan tombol reset kemudian colok adaptor untuk masuk ke menu Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
 
 #### 2. Menggunakan USB Programmer
 
