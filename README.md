@@ -15,7 +15,26 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ### Changelog :
 
-  #### BoluWrt 2.0 | Terbaru
+  #### BoluWrt 2.1 | Terbaru
+
+    1. Optimalisasi fungsi LED
+    2. Optimalisasi tema
+    3. Fix opkg dengan cara berikut:
+
+```
+- Masuk ke menu software
+- Ganti isi dari seluruh distribution feeds dengan value berikut:
+    
+src/gz chaos_calmer_base http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/base
+src/gz chaos_calmer_telephony http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/telephony
+src/gz chaos_calmer_packages http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/packages
+src/gz chaos_calmer_routing http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/routing
+src/gz chaos_calmer_luci http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/luci
+src/gz chaos_calmer_management http://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/management
+```
+
+
+  #### BoluWrt 2.0
   
     1. Init support untuk Bolt-BL201 (Tidak lagi menggunakan image dari Xiaomi)
     2. Semua LED berfungsi sebagaimana fungsinya
