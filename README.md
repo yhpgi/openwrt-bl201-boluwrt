@@ -111,4 +111,4 @@ Default IP : 192.168.1.1
 
 [Download Link](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/)
 
-[Link berguna](https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk)
+Link berguna [1](https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk) | [2](https://blog.csdn.net/kuangzuxiaoN/article/details/121458746)
