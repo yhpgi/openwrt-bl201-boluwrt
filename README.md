@@ -18,14 +18,13 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   #### BoluWrt 2.0 | Terbaru
   
     1. Init support untuk Bolt-BL201 (Tidak lagi menggunakan image dari Xiaomi)
-    2. Semua LED berfungsi sebagaimana fungsinya¹
+    2. Semua LED berfungsi sebagaimana fungsinya
     3. Dua farian (dengan dan tanpa MWAN3 untuk load-balance)
     4. Kembali menggunakan tema bootstrap²
     5. Include SQM-QOS dan VNSTAT seperti biasa
     
     Bug yang diketahui : opkg³
 
-   <sub>_1. Kecuali LED LAN karena kebatasan informasi gpio yang saya miliki._</sub>
    <sub>_2. Tema argon tidak bisa diterapkan di chaos-calmer T.T_</sub>
    <sub>_3. Link default opkg kedalwarsa._</sub>
     
