@@ -3,7 +3,7 @@
 ### 1. Persiapan
 
 * Unduh Breed-web [disini](https://breed.hackpascal.net/). gunakan versi breed-mt7620-reset26.bin.
-* Unduh program untuk telnet. bisa menggunakan [putty](https://www.putty.org/)
+* Unduh program untuk telnet. bisa menggunakan [putty](https://www.putty.org/).
 
 
 ### 2. Mendapatkan akses telnet
@@ -12,6 +12,7 @@
 * Edit 2860.dat menggunakan text editor.
 * Cari MGMT_TELNET_WAN dan MGMT_TELNET_LAN.
 * Ubah nilainya menjadi 1.
+* Arsipkan kembali, lalu restore menggunakan konfigurasi ini.
 * Reboot router
 
 ### 3. Install Breed-web
