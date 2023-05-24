@@ -10,12 +10,12 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 <div align="left">
   
   
-### Screenshoot
+## Screenshoot
 
 ![login-page](Screenshoot/login.png)
 ![overview](Screenshoot/overview.png)
 
-### Changelog :
+## Changelog :
 
   #### [BoluWrt 3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1) | Terbaru
 
@@ -46,7 +46,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 <div align="justify">
   
   
-### Penginstalan :
+## Penginstalan :
 
   #### 1. Menggunakan Breed-Web
 
@@ -84,16 +84,10 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
   - Melalui menu upgrade di Openwrt
 
-### Lain-lain :
+## Lain-lain :
 
   ```
   Password login     : (kosong)
   Password WiFi      : (kosong)
   Default IP         : 192.168.1.1
   ```
-
-Link berguna:
-  [voycn](https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk) 
-  [csdn](https://blog.csdn.net/kuangzuxiaoN/article/details/121458746)
-  </div>
-</div>
