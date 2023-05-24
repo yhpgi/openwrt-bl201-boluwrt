@@ -1,0 +1,21 @@
+Source-Makefile: feeds/luci/themes/luci-theme-bolu/Makefile
+Package: luci-theme-bolu
+Submenu: 4. Themes
+Version: 3.1.1-20230525
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +jsonfilter
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host luci-base/host 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Bolu Theme
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Bolu Theme
+
+@@
+
+

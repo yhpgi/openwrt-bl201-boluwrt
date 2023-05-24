@@ -1,0 +1,81 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid ""
+"). Note that list URLs and Shallalist category selections are not "
+"configurable via Luci."
+msgstr ""
+
+msgid "Adblock"
+msgstr "Blockering av annonser"
+
+msgid "Available blocklist sources ("
+msgstr "Tillgängliga källor för blockeringslistor ("
+
+msgid "Backup directory"
+msgstr "Säkerhetskopiera mapp"
+
+msgid "Backup options"
+msgstr "Alternativ för säkerhetskopiering"
+
+msgid "Blocklist sources"
+msgstr "Källor för blockeringslistor"
+
+msgid ""
+"Configuration of the adblock package to block ad/abuse domains by using DNS."
+msgstr ""
+"Konfiguration av paket adblock för att blockera annons/otillåtna domäner "
+"genom att användning DNS."
+
+msgid "Description"
+msgstr "Beskrivning"
+
+msgid "Enable adblock"
+msgstr "Aktivera abblock"
+
+msgid "Enable blocklist backup"
+msgstr "Aktivera säkerhetskopiering av blockeringslistan"
+
+msgid "Enable verbose debug logging"
+msgstr ""
+
+msgid "Enabled"
+msgstr "Aktiverad"
+
+msgid "Extra options"
+msgstr "Extra alternativ"
+
+msgid ""
+"File with whitelisted hosts/domains that are allowed despite being on a "
+"blocklist."
+msgstr ""
+
+msgid "Global options"
+msgstr "Globala alternativ"
+
+msgid ""
+"Options for further tweaking in case the defaults are not suitable for you."
+msgstr ""
+
+msgid "Restrict reload trigger to certain interface(s)"
+msgstr ""
+
+msgid ""
+"Space separated list of wan interfaces that trigger reload action. To "
+"disable reload trigger set it to 'false'. Default: empty"
+msgstr ""
+
+msgid "Whitelist file"
+msgstr "Vitlista fil"
+
+msgid "see list details"
+msgstr "se listans detaljer"
+
+#~ msgid "Count"
+#~ msgstr "Räkna"
+
+#~ msgid "Do not write status info to flash"
+#~ msgstr "Skriv inte status info till flash"
+
+#~ msgid "Redirect all DNS queries to the local resolver"
+#~ msgstr "Dirigera om alla DNS-förfrågning till den lokala resolvern"

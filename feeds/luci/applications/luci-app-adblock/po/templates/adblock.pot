@@ -1,0 +1,70 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid ""
+"). Note that list URLs and Shallalist category selections are not "
+"configurable via Luci."
+msgstr ""
+
+msgid "Adblock"
+msgstr ""
+
+msgid "Available blocklist sources ("
+msgstr ""
+
+msgid "Backup directory"
+msgstr ""
+
+msgid "Backup options"
+msgstr ""
+
+msgid "Blocklist sources"
+msgstr ""
+
+msgid ""
+"Configuration of the adblock package to block ad/abuse domains by using DNS."
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Enable adblock"
+msgstr ""
+
+msgid "Enable blocklist backup"
+msgstr ""
+
+msgid "Enable verbose debug logging"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Extra options"
+msgstr ""
+
+msgid ""
+"File with whitelisted hosts/domains that are allowed despite being on a "
+"blocklist."
+msgstr ""
+
+msgid "Global options"
+msgstr ""
+
+msgid ""
+"Options for further tweaking in case the defaults are not suitable for you."
+msgstr ""
+
+msgid "Restrict reload trigger to certain interface(s)"
+msgstr ""
+
+msgid ""
+"Space separated list of wan interfaces that trigger reload action. To "
+"disable reload trigger set it to 'false'. Default: empty"
+msgstr ""
+
+msgid "Whitelist file"
+msgstr ""
+
+msgid "see list details"
+msgstr ""
