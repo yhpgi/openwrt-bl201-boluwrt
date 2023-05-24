@@ -12,11 +12,23 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
 ### Screenshoot
 
-![image.png](screenshoot/overview.png)
+![login-page](screenshoot/login.png)
+![overview](screenshoot/overview.png)
 
 ### Changelog :
 
-  #### [BoluWrt 2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC) | Latest
+  #### [BoluWrt 3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1) | Terbaru
+
+    1. Didasarkan pada LEDE 17 / Custom compile untuk Bolt-BL201
+    2. Menggunakan bolu-theme sebagai tema default
+    3. Pengoptimalan driver WiFi
+    4. OPKG berfungsi
+    5. Semua LED berfungsi
+    6. Semua port berfungsi
+    7. Tombol reset berfungsi
+    8. Tombol WPS sengaja dimatikan
+
+  #### [BoluWrt 2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC)
 
     Based on Chaos-calmer 15.05.1 / Custom compile untuk Bolt-BL201
     
@@ -47,13 +59,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
    - Masuk ke menu upgrade lalu masukkan file sysupgeade pada kolom kedua dan eeprom pada kolom ketiga.
    - Lalu klik mulai. konfirmasi penginstallan dan tunggu proses flashing berjalan hingga selesai.
 
-#### ~2. Menggunakan USB Programmer~
-
-  - ~Unduh file full image di halaman rilis, kemudian flash menggunakan usb programmer langsung ke chip eeprom.~ 
-    
-    `File dihapus. disarankan menggunakan Breed-web.`
-
-#### 3. Menggunakan Openwrt sysupgrade
+#### 2. Menggunakan Openwrt sysupgrade
   
   - Aplikasi yang diperlukan :
   
@@ -75,16 +81,16 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
     e. tekan Enter. dan tunggu proses flashing hingga selesai.
   
-#### 4. Melalui LUCI
+#### 3. Melalui LUCI
   
   - Melalui menu upgrade di Openwrt
 
 ### Lain-lain :
 
 ```
-Password login : (kosong)
-Password WiFi (2.4Ghz dan 5Ghz) : (kosong)
-Default IP : 192.168.1.1
+Password login                    : (kosong)
+Password WiFi (2.4Ghz dan 5Ghz)   : (kosong)
+Default IP                        : 192.168.1.1
 ```
 
 Link berguna:
