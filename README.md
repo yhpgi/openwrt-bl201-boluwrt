@@ -1,6 +1,6 @@
 <div align="center">
 
-# BoluWrt-bl201
+# BoluWrt-BL201
 
 OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
