@@ -50,14 +50,11 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
   #### 1. Menggunakan Breed-Web
 
-  - Instal [Breed-web](https://breed.hackpascal.net)
-    * Harap berhati-hati saat menggunakan Breed-web. karena hanya tersedia dalam bahasa mandarin. pastikan Anda paham menu apa yang Anda klik.
-    * Breed image bisa didapatkan [disini](https://breed.hackpascal.net/), pilih `breed-mt7620-reset26.bin`.
-  
-   - Nyalakan Router sambil menekan tombol reset.
-   - Masuk ke halaman Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
-   - Masuk ke menu upgrade lalu masukkan file sysupgeade pada kolom kedua dan eeprom pada kolom ketiga.
-   - Lalu klik mulai. konfirmasi penginstallan dan tunggu proses flashing berjalan hingga selesai.
+  - [Install Breed-web](https://github.com/yHpgi/openwrt-bl201-boluwrt/blob/main/INSTALL-BREED.md)
+  - Nyalakan Router sambil menekan tombol reset.
+  - Masuk ke halaman Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
+  - Masuk ke menu upgrade lalu masukkan file sysupgeade pada kolom kedua dan eeprom pada kolom ketiga.
+  - Klik mulai. konfirmasi penginstalan dan tunggu proses flashing berjalan hingga selesai.
 
 #### 2. Menggunakan Openwrt sysupgrade
   
@@ -73,11 +70,13 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
     b. Unggah file sysupgrade ke folder `/tmp/` menggunakan WinScp;
   
-    c. Lalu buka putty, Login;
+    c. Buka putty, Login;
   
     d. ketikkan perintah berikut :
   
-      `sysupgrade -v -F -n /tmp/boluwrt-blablabla.bin`
+      ```
+      sysupgrade -v -F -n /tmp/[filename.bin]
+      ```
   
     e. tekan Enter. dan tunggu proses flashing hingga selesai.
   
@@ -87,11 +86,11 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ### Lain-lain :
 
-```
-Password login                    : (kosong)
-Password WiFi (2.4Ghz dan 5Ghz)   : (kosong)
-Default IP                        : 192.168.1.1
-```
+  ```
+  Password login     : (kosong)
+  Password WiFi      : (kosong)
+  Default IP         : 192.168.1.1
+  ```
 
 Link berguna:
   [voycn](https://www.voycn.com/article/bianyimoujiyuopenwrtdesdk) 
