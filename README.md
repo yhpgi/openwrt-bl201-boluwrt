@@ -12,8 +12,8 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
 ### Screenshoot
 
-![login-page](screenshoot/login.png)
-![overview](screenshoot/overview.png)
+![login-page](Screenshoot/login.png)
+![overview](Screenshoot/overview.png)
 
 ### Changelog :
 
