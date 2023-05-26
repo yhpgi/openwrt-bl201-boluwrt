@@ -95,4 +95,4 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 #### *Openwrt sepenuhnya opensource, tapi jika berkenan, Anda bisa mendukung saya melalui sociabuzz.*
 
 
-<a href="https://sociabuzz.com/yhpgi/tribe"><img style="width: 200px" src="https://lh3.google.com/u/0/d/1hlYKxv-2a5_LPws3BP2fntCbUIAXJAoi=w1280-h816-iv1" alt="Menampilkan Dukung Saya.png" aria-hidden="true"/></a>
+<a href="https://sociabuzz.com/yhpgi/tribe"><img style="width: 200px" src="Dump/DukungSaya.png" alt="sociabuzz"/></a>
