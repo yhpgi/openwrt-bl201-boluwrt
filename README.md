@@ -17,7 +17,11 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ## Changelog :
 
-  #### [BoluWrt 3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1) | Terbaru
+  #### [BoluWrt v4.3](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3) | Terbaru
+  
+  - Changelog dan info selelngkapnya mengenai build ini, silakan baca [disini](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3).
+  
+  #### [BoluWrt v3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1)
 
     1. Didasarkan pada LEDE 17 / Custom compile untuk Bolt-BL201
     2. Menggunakan bolu-theme sebagai tema default
@@ -28,7 +32,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
     7. Tombol reset berfungsi
     8. Tombol WPS sengaja dimatikan
 
-  #### [BoluWrt 2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC)
+  #### [BoluWrt v2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC)
 
     Based on Chaos-calmer 15.05.1 / Custom compile untuk Bolt-BL201
     
