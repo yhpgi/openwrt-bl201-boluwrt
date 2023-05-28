@@ -19,7 +19,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
   #### [BoluWrt v4.3](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3) | Terbaru
   
-  - Changelog dan info selelngkapnya mengenai build ini, silakan baca [disini](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3).
+  - Changelog dan info selengkapnya mengenai build ini, silakan baca [disini](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3).
   
   #### [BoluWrt v3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1)
 
@@ -57,7 +57,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   - [Install Breed-web](https://github.com/yHpgi/openwrt-bl201-boluwrt/blob/main/INSTALL-BREED.md)
   - Nyalakan Router sambil menekan tombol reset.
   - Masuk ke halaman Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
-  - Masuk ke menu upgrade lalu masukkan file sysupgeade pada kolom kedua dan eeprom pada kolom ketiga.
+  - Masuk ke menu upgrade, tab factory install, lalu masukkan file factory.
   - Klik mulai. konfirmasi penginstalan dan tunggu proses flashing berjalan hingga selesai.
 
 #### 2. Menggunakan Openwrt sysupgrade
