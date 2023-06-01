@@ -512,7 +512,7 @@ function voicemail.parse(z)
 			id			= '%s@%s' %{ z.number, z.context or 'default' },
 			number		= z.number,
 			context		= z.context 	or 'default',
-			name		= z.name		or z['.name'] or 'OpenWrt',
+			name		= z.name		or z['.name'] or 'BoluWrt',
 			zone		= z.zone		or 'homeloc',
 			password	= z.password	or '0000',
 			email		= z.email		or '',

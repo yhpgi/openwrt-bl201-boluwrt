@@ -1,5 +1,5 @@
 #!/bin/ash /etc/rc.common
-# Copyright (C) 2009-2010 OpenWrt.org
+# Copyright (C) 2009-2010 BoluWrt.org
 
 START=99
 STOP=80

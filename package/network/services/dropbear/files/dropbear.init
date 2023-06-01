@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2006-2010 OpenWrt.org
+# Copyright (C) 2006-2010 BoluWrt.org
 # Copyright (C) 2006 Carlos Sobrinho
 
 START=50
@@ -132,7 +132,7 @@ service_triggers()
 	config_load "${NAME}"
 	config_foreach load_interfaces dropbear
 
-	[ -n "${interfaces}" ] & {
+	[ -n "${interfaces}" ] && {
 		for n in $interfaces ; do
 			procd_add_interface_trigger "interface.*" $n /etc/init.d/dropbear reload
 		done

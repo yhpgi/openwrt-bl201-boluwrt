@@ -2,7 +2,7 @@
 
 LuCI Squid module
 
-Copyright (C) 2015, OpenWrt.org
+Copyright (C) 2015, BoluWrt.org
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ http_port.placeholder = "0-65535"
 
 visible_hostname = s:taboption("general", Value, "visible_hostname", translate("Visible Hostname"))
 visible_hostname.datatype="string"
-visible_hostname.placeholder = "OpenWrt"
+visible_hostname.placeholder = "BoluWrt"
 
 coredump_dir = s:taboption("general", Value, "coredump_dir", translate("Coredump files directory"))
 coredump_dir.datatype="string"

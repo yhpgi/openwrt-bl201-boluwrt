@@ -22,10 +22,19 @@ msgstr "Диск"
 msgid "Enable"
 msgstr "Активувати"
 
-msgid "Idle-time"
+#, fuzzy
+msgid "HDD Idle"
+msgstr "HD-простій"
+
+msgid ""
+"HDD Idle is a utility program for spinning-down external disks after a "
+"period of idle time."
+msgstr ""
+
+msgid "Idle time"
 msgstr "Час простою"
 
-msgid "Idle-time unit"
+msgid "Idle time unit"
 msgstr ""
 
 msgid "Settings"
@@ -33,15 +42,6 @@ msgstr "Налаштування"
 
 # Hours
 msgid "h"
-msgstr ""
-
-#, fuzzy
-msgid "hd-idle"
-msgstr "HD-простій"
-
-msgid ""
-"hd-idle is a utility program for spinning-down external disks after a period "
-"of idle time."
 msgstr ""
 
 # Minutes (not minimum)

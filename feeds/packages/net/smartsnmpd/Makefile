@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -38,7 +38,7 @@ endef
 define Package/smartsnmpd/description
 smartsnmpd is an implementation of SNMP Agent. Its goal is "Easily
 writing boring SNMP MIB with Lua". This package add native support
-for OpenWrt. Include using ubus and uci to get system info/status. 
+for BoluWrt. Include using ubus and uci to get system info/status. 
 And, it use libubox/uloop as low level event-driven library.
 endef
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2015 OpenWrt.org
+# Copyright (C) 2009-2015 BoluWrt.org
 # Copyright (C) 2009 Jakob Pfeiffer
 # Copyright (C) 2014 Artem Makhutov
 #

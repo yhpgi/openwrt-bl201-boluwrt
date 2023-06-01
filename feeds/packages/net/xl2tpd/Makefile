@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -39,7 +39,7 @@ It does implement both LAC and LNS role in a L2TP networking architecture. The
 main goal of this protocol is to tunnel PPP frame trough an IP network.
 endef
 
-# Use optimization options from OpenWrt build system
+# Use optimization options from BoluWrt build system
 MAKE_FLAGS += OFLAGS=""
 
 ifneq (0,0)

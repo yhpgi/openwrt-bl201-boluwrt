@@ -16,7 +16,7 @@ Index: httpd-2.4.25/config.layout
 --- httpd-2.4.25.orig/config.layout
 +++ httpd-2.4.25/config.layout
 @@ -28,8 +28,8 @@
-     cgidir:        ${datadir}/cgi-bin
+     cgidir:        ${datadir}/boluwrt
      includedir:    ${prefix}/include
      localstatedir: ${prefix}
 -    runtimedir:    ${localstatedir}/logs

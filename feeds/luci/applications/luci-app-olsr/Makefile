@@ -11,4 +11,4 @@ LUCI_DEPENDS:=+olsrd +olsrd-mod-jsoninfo +luci-lib-luaneightbl +luci-lib-json
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

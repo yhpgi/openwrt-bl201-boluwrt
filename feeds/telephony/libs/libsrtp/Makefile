@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 # Copyright (C) 2011 Victor Seva <linuxmaniac@torreviejawireless.org>
 #
 # This is free software, licensed under the GNU General Public License v2.

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014-2015 OpenWrt.org
+# Copyright (C) 2014-2015 BoluWrt.org
 #
 
 include $(TOPDIR)/rules.mk

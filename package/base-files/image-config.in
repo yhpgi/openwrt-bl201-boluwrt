@@ -1,4 +1,4 @@
-# Copyright (C) 2006-2012 OpenWrt.org
+# Copyright (C) 2006-2012 BoluWrt.org
 # Copyright (C) 2010 Vertical Communications
 #
 # This is free software, licensed under the GNU General Public License v2.
@@ -18,11 +18,11 @@ config TARGET_PREINIT_SUPPRESS_STDERR
 	default y
 	help
 		Sends stderr to null during preinit.  This is the default behaviour
-		in previous versions of OpenWrt.  This also prevents init process
+		in previous versions of BoluWrt.  This also prevents init process
 		itself from displaying stderr, however processes launched by init
 		in multiuser through inittab will use the current terminal (e.g.
 		the ash shell launched by inittab will display stderr).  That's
-		the same behaviour as seen in previous version of OpenWrt.
+		the same behaviour as seen in previous version of BoluWrt.
 
 config TARGET_PREINIT_DISABLE_FAILSAFE
 	bool
@@ -139,7 +139,7 @@ menuconfig INITOPT
 		help
 			Prevents showing stderr messages for init command if not already
 			suppressed during preinit.  This is the default behaviour in
-			previous versions of OpenWrt.  Removing this does nothing if
+			previous versions of BoluWrt.  Removing this does nothing if
 			stderr is suppressed during preinit (which is the default).
 
 
@@ -150,7 +150,7 @@ menuconfig VERSIONOPT
 		These options allow to override the version information embedded in
 		the /etc/openwrt_version, /etc/openwrt_release, /etc/banner,
 		/etc/opkg.conf, and /etc/os-release files. Usually there is no need
-		to set these, but they're useful for release builds or custom OpenWrt
+		to set these, but they're useful for release builds or custom BoluWrt
 		redistributions that should carry custom version tags.
 
 if VERSIONOPT
@@ -158,10 +158,10 @@ if VERSIONOPT
 	config VERSION_DIST
 		string
 		prompt "Release distribution"
-		default "LEDE"
+		default "BoluWrt"
 		help
 			This is the name of the release distribution.
-			If unspecified, it defaults to OpenWrt.
+			If unspecified, it defaults to BoluWrt.
 
 	config VERSION_NICK
 		string
@@ -190,7 +190,7 @@ if VERSIONOPT
 	config VERSION_REPO
 		string
 		prompt "Release repository"
-		default "http://downloads.lede-project.org/releases/17.01.0"
+		default "http://downloads.lede-project.org/releases/17.01.4"
 		help
 			This is the repository address embedded in the image, it defaults
 			to the trunk snapshot repo; the url may contain the following placeholders:
@@ -216,14 +216,14 @@ if VERSIONOPT
 		prompt "Manufacturer name"
 		help
 			This is the manufacturer name embedded in /etc/device_info
-			Useful for OEMs building OpenWrt based firmware
+			Useful for OEMs building BoluWrt based firmware
 
 	config VERSION_MANUFACTURER_URL
 		string
 		prompt "Manufacturer URL"
 		help
 			This is an URL to the manufacturer's website embedded in /etc/device_info
-			Useful for OEMs building OpenWrt based firmware
+			Useful for OEMs building BoluWrt based firmware
 
 	config VERSION_BUG_URL
 		string
@@ -242,14 +242,14 @@ if VERSIONOPT
 		prompt "Product name"
 		help
 			This is the product name embedded in /etc/device_info
-			Useful for OEMs building OpenWrt based firmware
+			Useful for OEMs building BoluWrt based firmware
 
 	config VERSION_HWREV
 		string
 		prompt "Hardware revision"
 		help
 			This is the hardware revision string embedded in /etc/device_info
-			Useful for OEMs building OpenWrt based firmware
+			Useful for OEMs building BoluWrt based firmware
 
 	config VERSION_FILENAMES
 		bool
@@ -262,7 +262,7 @@ if VERSIONOPT
 	config VERSION_CODE_FILENAMES
 		bool
 		prompt "Revision code in filenames"
-		default y
+		default n
 		help
 			Enable this to include the revision identifier or the configured
 			version code into the firmware image, SDK- and Image Builder archive

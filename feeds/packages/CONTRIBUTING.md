@@ -7,14 +7,14 @@
 All packages you commit or submit by pull-request should follow these simple guidelines:
 * Package a version which is still maintained by the upstream author.
 * Will be updated regularly to maintained and supported versions.
-* Have no dependencies outside the OpenWrt core packages or this repository feed.
+* Have no dependencies outside the BoluWrt core packages or this repository feed.
 * Have been tested to compile with the correct includes and dependencies. Please also test with "Compile with full language support" found under "General Build Settings" set if language support is relevant to your package.
 * Do NOT use a rolling source file (e.g. foo-latest.tar.gz) or the head of a branch as source for the package since that would create unpredictable builds which change over time.
 * Best of all -- it works as expected!
 
 #### Makefile contents should contain:
 
-* An up-to-date copyright notice. Use OpenWrt if no other present or supply your own.
+* An up-to-date copyright notice. Use BoluWrt if no other present or supply your own.
 * A (PKG_)MAINTAINER definition listing either yourself or another person in the field.
     (E.g.: PKG_MAINTAINER:= Joe D. Hacker `<jdh@jdhs-email-provider.org`>)
 * A PKG_LICENSE tag declaring the main license of the package.
@@ -60,13 +60,13 @@ Pull requests are the easiest way to contribute changes to git repos at Github. 
 
 * We will gladly grant commit access to responsible contributors who have made
   useful pull requests and / or feedback or patches to this repository or
-  OpenWrt in general. Please include your request for commit access in your
+  BoluWrt in general. Please include your request for commit access in your
   next pull request or ticket.
 
 ### Release Branches:
 
 * Branches named "for-XX.YY" (e.g. for-14.07) are release branches.
-* These branches are built with the respective OpenWrt release and are created
+* These branches are built with the respective BoluWrt release and are created
   during the release stabilisation phase.
 * Please ONLY cherry-pick or commit security and bug-fixes to these branches.
 * Do NOT add new packages and do NOT do major upgrades of packages here.

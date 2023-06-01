@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 LEDE
+# Copyright (C) 2016 BoluWrt
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.

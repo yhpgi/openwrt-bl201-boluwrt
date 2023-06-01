@@ -22,12 +22,12 @@
 #
 #    This script gives information about bmx7
 #    Can be executed from a linux shell: ./bmx7-info -s links
-#    Or from web interfae (with cgi enabled): http://host/cgi-bin/bmx7-info?links
+#    Or from web interfae (with cgi enabled): http://host/boluwrt/bmx7-info?links
 #    If you ask for a directory you wil get the directory contents in JSON forman
 
 BMX7_DIR="$(uci get bmx7.general.runtimeDir 2>/dev/null)" || BMX7_DIR="/var/run/bmx7/json"
 
-#Checking if shell mode or cgi-bin mode
+#Checking if shell mode or boluwrt mode
 if [ "$1" == "-s" ]; then
 	QUERY="$2"
 else

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -131,13 +131,13 @@ endef
 
 define Package/nut-web-cgi/install
 	$(INSTALL_DIR) $(1)/etc/nut
-	$(INSTALL_DIR) $(1)/usr/share/www/cgi-bin
+	$(INSTALL_DIR) $(1)/usr/share/www/boluwrt
 	$(INSTALL_CONF) $(PKG_INSTALL_DIR)/etc/nut/hosts.conf.sample $(1)/etc/nut/hosts.conf
 	$(INSTALL_CONF) $(PKG_INSTALL_DIR)/etc/nut/upsset.conf.sample $(1)/etc/nut/upsset.conf
 	$(INSTALL_CONF) $(PKG_INSTALL_DIR)/etc/nut/upsstats.html.sample $(1)/etc/nut/upsstats.html
 	$(INSTALL_CONF) $(PKG_INSTALL_DIR)/etc/nut/upsstats-single.html.sample $(1)/etc/nut/upsstats-single.html
 	$(CP) $(PKG_INSTALL_DIR)/usr/share/www/nut $(1)/usr/share/www/
-	$(CP) $(PKG_INSTALL_DIR)/usr/share/www/cgi-bin/nut $(1)/usr/share/www/cgi-bin/
+	$(CP) $(PKG_INSTALL_DIR)/usr/share/www/boluwrt/nut $(1)/usr/share/www/boluwrt/
 endef
 
 define Package/nut-avahi-service
@@ -332,7 +332,7 @@ CONFIGURE_ARGS += \
 	--$(if $(CONFIG_PACKAGE_nut-web-cgi),with,without)-cgi \
 	--with-statepath=/var/run \
 	--with-drvpath=/lib/nut \
-	--with-cgipath=/usr/share/www/cgi-bin/nut \
+	--with-cgipath=/usr/share/www/boluwrt/nut \
 	--with-htmlpath=/usr/share/www/nut \
 	--with-user=root \
 	--with-group=root

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 # Copyright (C) 2015 Christian Beier <dontmind@freeshell.org>
 #
 # This is free software, licensed under the GNU General Public License v2.

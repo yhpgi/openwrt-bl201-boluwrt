@@ -1,5 +1,5 @@
 # 
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -55,7 +55,7 @@ define Package/mailman/install
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) ./files/mailman.init $(1)/etc/init.d/mailman
 	$(INSTALL_DIR) $(1)/usr/www
-	ln -s $(prefix)/cgi-bin/ $(1)/usr/www/mailman
+	ln -s $(prefix)/boluwrt/ $(1)/usr/www/mailman
 	ln -s $(prefix)/archives/public/ $(1)/usr/www/pipermail
 	ln -s $(prefix)/icons $(1)/usr/www/icons
 endef

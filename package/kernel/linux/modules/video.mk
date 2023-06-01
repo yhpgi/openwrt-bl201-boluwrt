@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2009 David Cooper <dave@kupesoft.com>
-# Copyright (C) 2006-2010 OpenWrt.org
+# Copyright (C) 2006-2010 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -47,7 +47,7 @@ define KernelPackage/backlight-pwm
 	AUTOLOAD:=$(call AutoProbe,video pwm_bl)
 endef
 
-define KernelPackage/backlight/backlight-pwm
+define KernelPackage/backlight-pwm/description
 	Kernel module for PWM based Backlight support.
 endef
 
@@ -72,7 +72,7 @@ endef
 
 define KernelPackage/fb/x86
   FILES+=$(LINUX_DIR)/arch/x86/video/fbdev.ko
-  AUTOLOAD:=$(call AutoLoad,06,fbdev fb)
+  AUTOLOAD+=$(call AutoLoad,06,fbdev fb)
 endef
 
 $(eval $(call KernelPackage,fb))

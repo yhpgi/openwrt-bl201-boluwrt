@@ -11,5 +11,5 @@ LUCI_DEPENDS:=+luci-mod-admin-full +luci-lib-json +freifunk-firewall +freifunk-c
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature
 

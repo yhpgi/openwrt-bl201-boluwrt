@@ -288,4 +288,4 @@
 +    bool m_play;
 +};
 +
-+GLOBALMODULEDEFS(CPlaybackMod, "An advanced playback module for ZNC")
++GLOBALMODUBoluWrtFS(CPlaybackMod, "An advanced playback module for ZNC")

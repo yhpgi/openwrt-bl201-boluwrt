@@ -1,5 +1,5 @@
 #!/bin/sh
-# Setup dhcp interface settings for wan. This is the OpenWrt default,
+# Setup dhcp interface settings for wan. This is the BoluWrt default,
 # so all we need to do here is to delete wan from meshwizard after setup.
 # Also disallow ra on wan if ipv6 is enabled
 

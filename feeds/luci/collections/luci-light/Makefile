@@ -14,4 +14,4 @@ LUCI_DEPENDS:=+uhttpd +luci-mod-admin-mini +luci-theme-openwrt @BROKEN
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

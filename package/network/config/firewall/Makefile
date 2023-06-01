@@ -1,6 +1,6 @@
 #
-# Copyright (C) 2013-2016 OpenWrt.org
-# Copyright (C) 2016 LEDE project
+# Copyright (C) 2013-2016 BoluWrt.org
+# Copyright (C) 2016 BoluWrt project
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -12,10 +12,10 @@ PKG_NAME:=firewall
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/firewall3.git
-PKG_SOURCE_DATE:=2017-01-13
-PKG_SOURCE_VERSION:=37cb4cb437fd685f31926a4c326ba8afe329e4a6
-PKG_MIRROR_HASH:=7ee075f05977e5d9a78e661b537e6eb077c8f328ff2e71d1e2fbef44cca97355
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/firewall3.git
+PKG_SOURCE_DATE:=2017-05-27
+PKG_SOURCE_VERSION:=a4d98aea373e04f3fdc3c492c1688ba52ce490a9
+PKG_MIRROR_HASH:=55402b1e6bb471f6aed599c61c1c63b58212f5789f094d78247646fc0a7cf435
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 PKG_LICENSE:=ISC
 
@@ -27,7 +27,7 @@ include $(INCLUDE_DIR)/cmake.mk
 define Package/firewall
   SECTION:=net
   CATEGORY:=Base system
-  TITLE:=OpenWrt C Firewall
+  TITLE:=BoluWrt C Firewall
   DEPENDS:=+libubox +libubus +libuci +libip4tc +IPV6:libip6tc +libxtables +kmod-ipt-core +kmod-ipt-conntrack +kmod-ipt-nat
 endef
 

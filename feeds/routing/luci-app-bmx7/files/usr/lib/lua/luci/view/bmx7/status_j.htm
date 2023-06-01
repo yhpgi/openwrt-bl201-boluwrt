@@ -117,7 +117,7 @@
 </div>
 
 <script type="text/javascript">//<![CDATA[
-	new TablePooler(1,"/cgi-bin/bmx7-info", {'$info':''}, "config_table", function(st){
+	new TablePooler(1,"/boluwrt/bmx7-info", {'$info':''}, "config_table", function(st){
 		var res = Array();
 		var sta = st.info[0].status;
 		var ifaces = st.info[1].interfaces;
@@ -130,7 +130,7 @@
 	});
 
 
-	new TablePooler(1,"/cgi-bin/bmx7-info", {'$info':''}, "status_table", function(st){
+	new TablePooler(1,"/boluwrt/bmx7-info", {'$info':''}, "status_table", function(st){
 		var res = Array();
 		var sta = st.info[0].status;
 		var mem = st.info[3].memory;
@@ -149,7 +149,7 @@
 		return res;
 	});
 
-		new TablePooler(1,"/cgi-bin/bmx7-info", {'$info':''}, "ifaces_table", function(st){
+		new TablePooler(1,"/boluwrt/bmx7-info", {'$info':''}, "ifaces_table", function(st){
 		var res = Array();
 		var sta = st.info[0].status;
 		var ifaces = st.info[1].interfaces;
@@ -164,7 +164,7 @@
 		return res;
 	});
 
-		new TablePooler(1,"/cgi-bin/bmx7-info", {'links':''}, "links_table", function(st){
+		new TablePooler(1,"/boluwrt/bmx7-info", {'links':''}, "links_table", function(st){
 		var res = Array();
 		links = st.links;
 

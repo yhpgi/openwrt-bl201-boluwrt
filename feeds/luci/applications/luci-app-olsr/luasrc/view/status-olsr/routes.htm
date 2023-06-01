@@ -53,19 +53,19 @@ XHR.poll(20, '<%=REQUEST_URI%>', { status: 1 },
 						'<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+' proto-%s">' +
 							'<td class="cbi-section-table-cell">%s/%s</td>' +
 							'<td class="cbi-section-table-cell">' +
-			                	                '<a href="http://%s/cgi-bin-status.html">%s</a>',
+			                	                '<a href="http://%s/boluwrt-status.html">%s</a>',
 								route.proto, route.dest, route.genmask, route.gw, route.gw
 						)
 
 					if (route.hostname) {
 						if (hna.proto == '6') {
 							s += String.format(
-			                                        ' / <a href="http://[%s]/cgi-bin-status.html">%s</a>',
+			                                        ' / <a href="http://[%s]/boluwrt-status.html">%s</a>',
 								route.hostname, route.hostname || '?'
 								);
 						} else {
 							s += String.format(
-			                                        ' / <a href="http://%s/cgi-bin-status.html">%s</a>',
+			                                        ' / <a href="http://%s/boluwrt-status.html">%s</a>',
 								route.hostname, route.hostname || '?'
 								);
 						}
@@ -118,12 +118,12 @@ XHR.poll(20, '<%=REQUEST_URI%>', { status: 1 },
 			<td class="cbi-section-table-cell"><%=route.destination%>/<%=route.genmask%></td>
 			<td class="cbi-section-table-cell">
 				<% if route.proto == '6' then %>
-				<a href="http://[<%=route.gateway%>]/cgi-bin-status.html"><%=route.gateway%></a>
+				<a href="http://[<%=route.gateway%>]/boluwrt-status.html"><%=route.gateway%></a>
 				<% else  %>
-				<a href="http://<%=route.gateway%>/cgi-bin-status.html"><%=route.gateway%></a>
+				<a href="http://<%=route.gateway%>/boluwrt-status.html"><%=route.gateway%></a>
 				<% end %>
 				<% if route.hostname then %>
-					/ <a href="http://<%=route.Hostname%>/cgi-bin-status.html"><%=route.hostname%></a>  
+					/ <a href="http://<%=route.Hostname%>/boluwrt-status.html"><%=route.hostname%></a>  
 				<% end %>
 			</td>
 			<td class="cbi-section-table-cell"><%=route.networkInterface%></td>

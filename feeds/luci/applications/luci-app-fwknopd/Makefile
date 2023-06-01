@@ -14,4 +14,4 @@ PKG_LICENSE:=GPLv2
 PKG_MAINTAINER:=Jonathan Bennett <JBennett@incomsystems.biz>
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 OpenWrt.org
+# Copyright (C) 2011 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=om-watchdog
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 PKG_VERSION:=1
 
 include $(INCLUDE_DIR)/package.mk
@@ -24,12 +24,6 @@ define Package/om-watchdog/description
  This package contains the hw watchdog script for the OM1P and OM2P device.
 endef
 
-define Build/Prepare
-endef
-
-define Build/Compile
-endef
-
 define Build/Compile
 endef
 
@@ -40,6 +34,4 @@ define Package/om-watchdog/install
 	$(INSTALL_BIN) ./files/om-watchdog $(1)/sbin/om-watchdog
 endef
 
-
 $(eval $(call BuildPackage,om-watchdog))
-

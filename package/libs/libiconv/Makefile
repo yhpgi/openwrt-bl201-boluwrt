@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2012 OpenWrt.org
+# Copyright (C) 2010-2012 BoluWrt.org
 #
 # This Makefile and the code shipped in src/ is free software, licensed
 # under the GNU Lesser General Public License, version 2.1 and later.

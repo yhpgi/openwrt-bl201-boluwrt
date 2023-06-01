@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2015 OpenWrt.org
+# Copyright (C) 2010-2015 BoluWrt.org
 # Copyright (C) 2010 segal.di.ubi.pt
 #
 # This is free software, licensed under the GNU General Public License v2.

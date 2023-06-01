@@ -21,7 +21,7 @@
  * Usage:
  * For compatibility reasons with the original asus driver, the time can be
  * read and set via the /dev/rtc device entry. The only accepted data format
- * is "YYYY:MM:DD:W:HH:MM:SS\n". See OpenWrt wiki for a script which handles
+ * is "YYYY:MM:DD:W:HH:MM:SS\n". See BoluWrt wiki for a script which handles
  * this format.
  *
  * In addition, this driver supports the standard ioctl() calls for setting

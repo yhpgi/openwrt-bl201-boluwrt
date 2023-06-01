@@ -1,4 +1,4 @@
-# Copyright (C) 2015 OpenWrt.org
+# Copyright (C) 2015 BoluWrt.org
 # Copyright (C) 2015-2016 Lantiq Beteiligungs GmbH & Co KG.
 #
 # This is free software, licensed under the GNU General Public License v2.

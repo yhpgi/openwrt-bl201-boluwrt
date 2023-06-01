@@ -128,7 +128,7 @@ end
 
 function action_nodes_j()
 	local http = require "luci.http"
-	local link_non_js = "/cgi-bin/luci" .. http.getenv("PATH_INFO") .. '/nodes_nojs'
+	local link_non_js = "/boluwrt/bolu" .. http.getenv("PATH_INFO") .. '/nodes_nojs'
 
 	luci.template.render("bmx6/nodes_j", {link_non_js=link_non_js})
 end

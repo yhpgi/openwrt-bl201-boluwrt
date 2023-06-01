@@ -7,7 +7,7 @@ We do not need to autodetect SSL/UUID; SSL we do not support, UUID we always do.
  endif # ($(TEST),1)
  
 +ifeq ($(TARGET_OPENWRT),)
-+# n/a - we don't enable https server for IGD v2 anyway in OpenWrt
++# n/a - we don't enable https server for IGD v2 anyway in BoluWrt
  LDLIBS += $(shell $(PKG_CONFIG) --static --libs-only-l libssl)
  
 +# n/a - we hardcodedly support libuuid

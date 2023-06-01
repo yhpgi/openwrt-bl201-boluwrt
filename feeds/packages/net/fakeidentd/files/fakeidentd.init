@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2006-2012 OpenWrt.org
+# Copyright (C) 2006-2012 BoluWrt.org
 
 START=85
 

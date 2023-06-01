@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2014 OpenWrt.org
+# Copyright (C) 2009-2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -20,7 +20,7 @@ PKG_INSTALL:=1
 
 PKG_FLAGS:=nonshared
 
-PKG_BUILD_DEPENDS:=util-linux liblzo zlib
+PKG_BUILD_DEPENDS:=util-linux lzo zlib
 
 PKG_LICENSE:=GPLv2
 PKG_LICENSE_FILES:=

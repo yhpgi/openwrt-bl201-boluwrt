@@ -1,6 +1,6 @@
 
 #
-# Copyright (C) 2006-2010 OpenWrt.org
+# Copyright (C) 2006-2010 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -360,8 +360,6 @@ define KernelPackage/nf-nathelper/description
  Default Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - ftp
- - irc
- - tftp
 endef
 
 $(eval $(call KernelPackage,nf-nathelper))
@@ -381,11 +379,13 @@ define KernelPackage/nf-nathelper-extra/description
  Includes:
  - amanda
  - h323
+ - irc
  - mms
  - pptp
  - proto_gre
  - sip
  - snmp_basic
+ - tftp
  - broadcast
 endef
 
@@ -495,7 +495,7 @@ $(eval $(call KernelPackage,ipt-tproxy))
 
 define KernelPackage/ipt-tee
   TITLE:=TEE support
-  DEPENDS:=+kmod-ipt-conntrack @!LINUX_4_4
+  DEPENDS:=+kmod-ipt-conntrack
   KCONFIG:= \
   	CONFIG_NETFILTER_XT_TARGET_TEE
   FILES:= \

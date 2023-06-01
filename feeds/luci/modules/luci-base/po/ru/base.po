@@ -155,6 +155,11 @@ msgstr ""
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Парный: %s / Групповой: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -426,9 +431,6 @@ msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Беспроводной 802.11%s контроллер Atheros"
 
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -1058,6 +1060,9 @@ msgstr "Включить поддержку VLAN"
 msgid "Enable WPS pushbutton, requires WPA(2)-PSK"
 msgstr ""
 
+msgid "Enable key reinstallation (KRACK) countermeasures"
+msgstr ""
+
 msgid "Enable learning and aging"
 msgstr "Включить изучение и устаревание (learning/aging)"
 
@@ -1486,8 +1491,14 @@ msgstr "Длина префикса IPv6"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "IPv6-адрес"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6 в IPv4 (RFC4213)"
@@ -1593,6 +1604,9 @@ msgstr "Установленные пакеты"
 msgid "Interface"
 msgstr "Интерфейс"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "Конфигурация интерфейса"
 
@@ -1649,7 +1663,10 @@ msgstr ""
 "устройства! Пожалуйста, проверьте файл образа."
 
 msgid "Java Script required!"
-msgstr "Требуется Java Script!"
+msgstr ""
+
+msgid "JavaScript required!"
+msgstr "Требуется JavaScript!"
 
 msgid "Join Network"
 msgstr "Подключение к сети"
@@ -1716,9 +1733,6 @@ msgstr "Срок действия аренды"
 
 msgid "Leasefile"
 msgstr "Файл аренд"
-
-msgid "Leasetime"
-msgstr "Время аренды"
 
 msgid "Leasetime remaining"
 msgstr "Оставшееся время аренды"
@@ -2237,12 +2251,16 @@ msgstr ""
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
-msgstr ""
-
 msgid ""
 "Optional. Adds in an additional layer of symmetric-key cryptography for post-"
 "quantum resistance."
+msgstr ""
+
+msgid ""
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2391,6 +2409,9 @@ msgstr ""
 msgid "Password successfully changed!"
 msgstr "Пароль успешно изменён!"
 
+msgid "Password2"
+msgstr ""
+
 msgid "Path to CA-Certificate"
 msgstr "Путь к центру сертификации"
 
@@ -2461,6 +2482,9 @@ msgid "Power Management Mode"
 msgstr ""
 
 msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
+msgid "Prefix Delegated"
 msgstr ""
 
 msgid "Preshared Key"
@@ -2724,7 +2748,7 @@ msgstr ""
 
 msgid ""
 "Requires the 'full' version of wpad/hostapd and support from the wifi driver "
-"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
+"<br />(as of Feb 2017: ath9k and ath10k, in BoluWrt also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -3746,6 +3770,13 @@ msgstr "Беспроводная сеть перезапущена"
 msgid "Wireless shut down"
 msgstr "Выключение беспроводной сети"
 
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
+
 msgid "Write received DNS requests to syslog"
 msgstr "Записывать полученные DNS-запросы в системный журнал"
 
@@ -3768,7 +3799,11 @@ msgstr ""
 msgid ""
 "You must enable Java Script in your browser or LuCI will not work properly."
 msgstr ""
-"Вам необходимо включить Java Script в вашем браузере для корректной работы "
+
+msgid ""
+"You must enable JavaScript in your browser or LuCI will not work properly."
+msgstr ""
+"Вам необходимо включить JavaScript в вашем браузере для корректной работы "
 "LuCI."
 
 msgid ""
@@ -3782,10 +3817,6 @@ msgstr "любой"
 
 msgid "auto"
 msgstr "авто"
-
-#, fuzzy
-msgid "automatic"
-msgstr "статический"
 
 msgid "baseT"
 msgstr "baseT"
@@ -3864,9 +3895,6 @@ msgstr ""
 msgid "minutes"
 msgstr ""
 
-msgid "navigation Navigation"
-msgstr ""
-
 msgid "no"
 msgstr "нет"
 
@@ -3898,12 +3926,6 @@ msgid "routed"
 msgstr "маршрутизируемый"
 
 msgid "server mode"
-msgstr ""
-
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
 msgstr ""
 
 msgid "stateful-only"
@@ -3941,6 +3963,13 @@ msgstr "да"
 
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "Leasetime"
+#~ msgstr "Время аренды"
+
+#, fuzzy
+#~ msgid "automatic"
+#~ msgstr "статический"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr ""

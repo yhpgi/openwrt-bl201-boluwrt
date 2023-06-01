@@ -189,7 +189,7 @@ function wifi_add()
 	if dev then
 		local net = dev:add_wifinet({
 			mode       = "ap",
-			ssid       = "OpenWrt",
+			ssid       = "BoluWrt",
 			encryption = "none"
 		})
 

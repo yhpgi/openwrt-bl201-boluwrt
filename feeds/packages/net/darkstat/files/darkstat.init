@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2007-2016 OpenWrt.org
+# Copyright (C) 2007-2016 BoluWrt.org
 
 START=60
 APP=darkstat

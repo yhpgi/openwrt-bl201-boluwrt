@@ -1,6 +1,6 @@
 #!/bin/sh
 # 6to4.sh - IPv6-in-IPv4 tunnel backend
-# Copyright (c) 2010-2012 OpenWrt.org
+# Copyright (c) 2010-2012 BoluWrt.org
 
 [ -n "$INCLUDE_ONLY" ] || {
 	. /lib/functions.sh

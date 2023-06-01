@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (C) 2011-2012 OpenWrt.org
+# Copyright (C) 2011-2012 BoluWrt.org
 #
 
 ubootenv_add_uci_config() {

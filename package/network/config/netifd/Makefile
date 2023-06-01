@@ -4,7 +4,7 @@ PKG_NAME:=netifd
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/netifd.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/netifd.git
 PKG_SOURCE_DATE:=2017-01-25
 PKG_SOURCE_VERSION:=650758b16e5185505a3fbc1307949340af70b611
 PKG_MIRROR_HASH:=d09c740bc1bf6269678bd75c9af52ecd4be3d1d59402a543ceb9d4459cecfa2b
@@ -22,7 +22,7 @@ define Package/netifd
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+libuci +libnl-tiny +libubus +ubus +ubusd +jshn +libubox
-  TITLE:=OpenWrt Network Interface Configuration Daemon
+  TITLE:=BoluWrt Network Interface Configuration Daemon
 endef
 
 TARGET_CFLAGS += \

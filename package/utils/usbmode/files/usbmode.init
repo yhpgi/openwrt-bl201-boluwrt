@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2013 OpenWrt.org
+# Copyright (C) 2013 BoluWrt.org
 
 START=20
 USE_PROCD=1

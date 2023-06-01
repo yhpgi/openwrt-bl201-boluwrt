@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2011 OpenWrt.org
+# Copyright (C) 2011 BoluWrt.org
 
 . /usr/share/libubox/jshn.sh
 

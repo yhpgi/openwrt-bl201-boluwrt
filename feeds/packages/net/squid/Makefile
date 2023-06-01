@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -126,8 +126,8 @@ define Package/squid/install
 endef
 
 define Package/squid-mod-cachemgr/install
-	$(INSTALL_DIR) $(1)/www/cgi-bin/
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/squid/cachemgr.cgi $(1)/www/cgi-bin/
+	$(INSTALL_DIR) $(1)/www/boluwrt/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/squid/cachemgr.cgi $(1)/www/boluwrt/
 endef
 
 $(eval $(call BuildPackage,squid))

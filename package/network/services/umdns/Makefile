@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -10,11 +10,11 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=umdns
 PKG_RELEASE:=1
 
-PKG_SOURCE_URL=$(LEDE_GIT)/project/mdnsd.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/mdnsd.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2017-02-15
-PKG_SOURCE_VERSION:=0d545ed7287026584722a3f9aa855c29bd24d59f
-PKG_MIRROR_HASH:=9670680a31f8eca5724da4cd12efedcbc27563b09ed4d94218f5debee1673abc
+PKG_SOURCE_DATE:=2017-05-22
+PKG_SOURCE_VERSION:=0e8b948ff8dd1cb1763180c99b522390529c7841
+PKG_MIRROR_HASH:=1cdd25464e1be69bef56092bc8547ba254ffc2d7c32f13cf02a80c8742876f1b
 
 PKG_MAINTAINER:=John Crispin <john@phrozen.org>
 PKG_LICENSE:=LGPL-2.1
@@ -26,7 +26,7 @@ include $(INCLUDE_DIR)/cmake.mk
 define Package/umdns
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=OpenWrt Multicast DNS Daemon
+  TITLE:=BoluWrt Multicast DNS Daemon
   DEPENDS:=+libubox +libubus +libblobmsg-json
 endef
 

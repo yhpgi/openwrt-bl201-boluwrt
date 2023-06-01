@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -78,8 +78,8 @@ define Package/apcupsd/install
 endef
 
 define Package/apcupsd-cgi/install
-	$(INSTALL_DIR) $(1)/www/cgi-bin/apcupsd
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/etc/apcupsd/*.cgi $(1)/www/cgi-bin/apcupsd
+	$(INSTALL_DIR) $(1)/www/boluwrt/apcupsd
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/etc/apcupsd/*.cgi $(1)/www/boluwrt/apcupsd
 	$(INSTALL_DIR) $(1)/etc/apcupsd
 	$(INSTALL_CONF) ./files/apcupsd.css $(1)/etc/apcupsd/
 	$(INSTALL_CONF) ./files/hosts.conf $(1)/etc/apcupsd/

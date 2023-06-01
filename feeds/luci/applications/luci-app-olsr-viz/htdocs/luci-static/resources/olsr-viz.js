@@ -34,7 +34,7 @@ Changes:
 2010-12-11: Changed some paths to make it work with Kamikaze and Luci -- soma
 */
 
-var cgi_url = "/cgi-bin/vizdata.sh";
+var cgi_url = "/boluwrt/vizdata.sh";
 
 var maxmetric = 3;
 var iconvariant = "-mini";

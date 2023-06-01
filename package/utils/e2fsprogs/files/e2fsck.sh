@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright 2010 Vertical Communications
-# Copyright 2012 OpenWrt.org
+# Copyright 2012 BoluWrt.org
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
 #

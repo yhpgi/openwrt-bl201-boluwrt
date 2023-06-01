@@ -77,6 +77,7 @@ bc2)
 	set_usb_led "$board:blue:usb"
 	;;
 bolt-bl201)
+	ucidef_set_led_default "power" "POWER" "$board:blue:power" "1"
 	;;
 br-6425)
 	set_wifi_led "$board:orange:wlan"
@@ -92,7 +93,6 @@ c20i)
 	ucidef_set_led_wlan "wlan" "wlan" "$board:blue:wlan" "phy0radio"
 	;;
 c50)
-	ucidef_set_led_default "power" "power" "$board:green:power" "0"
 	ucidef_set_led_switch "lan" "lan" "$board:green:lan" "switch0" "0x1e"
 	ucidef_set_led_switch "wan" "wan" "$board:green:wan" "switch0" "0x01"
 	set_usb_led "$board:green:usb"
@@ -110,6 +110,10 @@ cy-swr1100)
 d105)
 	ucidef_set_led_default "power" "POWER" "$board:red:power" "1"
 	set_usb_led "$board:green:usb"
+	;;
+d240)
+	set_wifi_led "$board:blue:wifi"
+	set_usb_led "$board:blue:usb"
 	;;
 db-wrt01)
 	ucidef_set_led_default "power" "power" "$board:orange:power" "1"
@@ -157,7 +161,8 @@ vr500)
 dir-860l-b1)
 	ucidef_set_led_netdev "wan" "wan" "$board:green:net" "eth0.2"
 	;;
-ex2700)
+ex2700|\
+wn3000rpv3)
 	ucidef_set_led_default "power_r" "POWER (red)" "$board:red:power" "0"
 	set_wifi_led "$board:green:router"
 	;;

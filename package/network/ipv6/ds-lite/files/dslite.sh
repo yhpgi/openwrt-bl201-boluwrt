@@ -1,6 +1,6 @@
 #!/bin/sh
 # dslite.sh - IPv4-in-IPv6 tunnel backend
-# Copyright (c) 2013 OpenWrt.org
+# Copyright (c) 2013 BoluWrt.org
 
 [ -n "$INCLUDE_ONLY" ] || {
 	. /lib/functions.sh

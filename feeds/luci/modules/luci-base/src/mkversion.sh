@@ -15,7 +15,7 @@ if pcall(dofile, "/etc/openwrt_release") and _G.DISTRIB_DESCRIPTION then
 		end
 	end
 else
-	distname    = "OpenWrt"
+	distname    = "BoluWrt"
 	distversion = "Development Snapshot"
 end
 

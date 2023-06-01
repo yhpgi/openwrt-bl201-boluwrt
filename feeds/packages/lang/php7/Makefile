@@ -95,7 +95,7 @@ define Package/php7/description
   your PHP flavour (cli, cgi or fastcgi).
 
   Please note, that installing php5 and php7 in parallel on the same target
-  is not supported in OpenWrt/LEDE.
+  is not supported in BoluWrt/BoluWrt.
 endef
 
 define Package/php7-cli

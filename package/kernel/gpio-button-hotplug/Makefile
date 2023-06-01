@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008-2012 OpenWrt.org
+# Copyright (C) 2008-2012 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -28,7 +28,7 @@ define KernelPackage/gpio-button-hotplug/description
 
  Instead of generating input events (like in-kernel drivers do) it generates
  uevent-s and broadcasts them. This allows disabling input subsystem which is
- an overkill for OpenWrt simple needs.
+ an overkill for BoluWrt simple needs.
 endef
 
 MAKE_OPTS:= \

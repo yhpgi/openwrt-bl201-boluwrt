@@ -37,13 +37,13 @@ local olsrtools = require "luci.tools.olsr"
 
 			<% if route.proto == "6" then %>
 
-			<td class="cbi-section-table-cell"><a href="http://[<%=route.destinationIP%>]/cgi-bin-status.html"><%=route.destinationIP%></a></td>
-			<td class="cbi-section-table-cell"><a href="http://[<%=route.lastHopIP%>]/cgi-bin-status.html"><%=route.lastHopIP%></a></td>
+			<td class="cbi-section-table-cell"><a href="http://[<%=route.destinationIP%>]/boluwrt-status.html"><%=route.destinationIP%></a></td>
+			<td class="cbi-section-table-cell"><a href="http://[<%=route.lastHopIP%>]/boluwrt-status.html"><%=route.lastHopIP%></a></td>
 
 			<% else %>
 
-			<td class="cbi-section-table-cell"><a href="http://<%=route.destinationIP%>/cgi-bin-status.html"><%=route.destinationIP%></a></td>
-			<td class="cbi-section-table-cell"><a href="http://<%=route.lastHopIP%>/cgi-bin-status.html"><%=route.lastHopIP%></a></td>
+			<td class="cbi-section-table-cell"><a href="http://<%=route.destinationIP%>/boluwrt-status.html"><%=route.destinationIP%></a></td>
+			<td class="cbi-section-table-cell"><a href="http://<%=route.lastHopIP%>/boluwrt-status.html"><%=route.lastHopIP%></a></td>
 
 			<%end%>
 

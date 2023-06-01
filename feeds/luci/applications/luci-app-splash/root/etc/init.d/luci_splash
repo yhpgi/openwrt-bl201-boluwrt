@@ -180,7 +180,7 @@ boot() {
         uci get uhttpd.splash 2>/dev/null || {
 uci batch <<EOF
 	set uhttpd.splash=uhttpd
-	set uhttpd.splash.home="/www/cgi-bin/splash/"
+	set uhttpd.splash.home="/www/boluwrt/splash/"
 	set uhttpd.splash.interpreter=".sh=/bin/ash"
 	set uhttpd.splash.listen_http="8082"
 	set uhttpd.splash.index_page="splash.sh"

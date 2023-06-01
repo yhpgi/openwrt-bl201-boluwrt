@@ -1,4 +1,4 @@
-# Copyright (C) 2006-2013 OpenWrt.org
+# Copyright (C) 2006-2013 BoluWrt.org
 
 find_mtd_chardev() {
 	local INDEX=$(find_mtd_index "$1")

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2014 OpenWrt.org
+# Copyright (C) 2010-2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -112,7 +112,7 @@ define Build/Compile
 		CROSS_COMPILE=$(TARGET_CROSS)
 	mkimage -A $(ARCH) -O linux -T kernel -C none \
 		-a 0x600000 -e 0x600000 \
-		-n 'OpenWrt Das U-Boot uImage' \
+		-n 'BoluWrt Das U-Boot uImage' \
 		-d $(PKG_BUILD_DIR)/u-boot.bin $(PKG_BUILD_DIR)/u-boot.img
 endef
 

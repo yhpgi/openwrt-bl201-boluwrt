@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2012 OpenWrt.org
+# Copyright (C) 2009-2012 BoluWrt.org
 # Copyright (C) 2009-2014 Thomas Heil <heil@terminal-consulting.de>
 #
 # This is free software, licensed under the GNU General Public License v2.
@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=memcached
-PKG_VERSION:=1.4.34
+PKG_VERSION:=1.4.36
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://memcached.org/files
-PKG_MD5SUM:=040887d52dfcc88b2e8918b4bfd91bf5
+PKG_MD5SUM:=1e028fbab7288911fcaa5ed2a21817fe
 
 PKG_MAINTAINER:=Thomas Heil <heil@terminal-consulting.de>
 

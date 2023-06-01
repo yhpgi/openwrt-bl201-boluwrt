@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2006-2013 OpenWrt.org
+# Copyright (C) 2006-2013 BoluWrt.org
 # Copyright (C) 2010 Vertical Communications
 
 boot_hook_splice_start() {

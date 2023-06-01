@@ -11,4 +11,4 @@ LUCI_DEPENDS:=+luci-app-pbx +asterisk18 +msmtp +coreutils-base64 @BROKEN
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

@@ -1,6 +1,6 @@
 #!/bin/sh
 # gnunet.sh - GNUnet proto for netifd
-# Copyright (c) 2016 OpenWrt.org
+# Copyright (c) 2016 BoluWrt.org
 
 [ -n "$INCLUDE_ONLY" ] || {
 	. /lib/functions.sh

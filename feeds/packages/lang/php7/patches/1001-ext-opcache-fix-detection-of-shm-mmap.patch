@@ -11,7 +11,7 @@ It should be discussed with upstream to find a better solution.
 
 This solves the issue reported at
 https://github.com/openwrt/packages/issues/1010
-and makes opcache usable on OpenWrt.
+and makes opcache usable on BoluWrt.
 
 Signed-off-by: Michael Heimpold <mhei@heimpold.de>
 ---

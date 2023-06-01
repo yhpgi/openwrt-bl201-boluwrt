@@ -1,10 +1,10 @@
-This package will add the so-called `pppossh` protocol support to OpenWrt.  The idea is mainly from [`pvpn` project](https://github.com/halhen/pvpn) (poor man's VPN over SSH).
+This package will add the so-called `pppossh` protocol support to BoluWrt.  The idea is mainly from [`pvpn` project](https://github.com/halhen/pvpn) (poor man's VPN over SSH).
 
-PPPoSSH is generally not considered a network setup for production use mainly due to the TCP-over-TCP styles of traffic transport, but it can be quite handy for personal use.  And with what's already in OpenWrt, it is really easy and takes little extra space to configure it up running.
+PPPoSSH is generally not considered a network setup for production use mainly due to the TCP-over-TCP styles of traffic transport, but it can be quite handy for personal use.  And with what's already in BoluWrt, it is really easy and takes little extra space to configure it up running.
 
 ## Prerequisites and dependency.
 
-`pppossh` depends on either `dropbear` or `openssh-client`; `dropbear` is normally enabled in OpenWrt by default.
+`pppossh` depends on either `dropbear` or `openssh-client`; `dropbear` is normally enabled in BoluWrt by default.
 
 The following requirements need to be fulfilled for it to work.
 
@@ -17,7 +17,7 @@ The following requirements need to be fulfilled for it to work.
 
 - SSH server's fingerprint has to be present in `~/.ssh/known_hosts` for the authentication to proceed in an unattended way.
 
-	Manually logging in at least once to the remote server from OpenWrt should do this for you.
+	Manually logging in at least once to the remote server from BoluWrt should do this for you.
 
 ## How to use it.
 

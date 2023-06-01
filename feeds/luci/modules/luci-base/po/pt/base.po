@@ -157,6 +157,11 @@ msgstr "<abbr title=\"máximo\">Max.</abbr> consultas concorrentes"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Emparelhada: %s / Grupo: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -427,9 +432,6 @@ msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Controlador Wireless Atheros 802.11%s"
 
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -1057,6 +1059,9 @@ msgstr "Ativar a funcionalidade VLAN"
 msgid "Enable WPS pushbutton, requires WPA(2)-PSK"
 msgstr ""
 
+msgid "Enable key reinstallation (KRACK) countermeasures"
+msgstr ""
+
 msgid "Enable learning and aging"
 msgstr "Ativar aprendizagem e envelhecimento"
 
@@ -1487,8 +1492,14 @@ msgstr "Comprimento do prefixo IPv6"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "Endereço-IPv6"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6-em-IPv4 (RFC4213)"
@@ -1590,6 +1601,9 @@ msgstr "Instalar pacotes"
 msgid "Interface"
 msgstr "Interface"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "Configuração da Interface"
 
@@ -1645,7 +1659,10 @@ msgstr ""
 "equipamento. Por favor verifique o ficheiro de imagem."
 
 msgid "Java Script required!"
-msgstr "É necessário Javascript!"
+msgstr ""
+
+msgid "JavaScript required!"
+msgstr "É necessário JavaScript!"
 
 msgid "Join Network"
 msgstr "Associar Rede"
@@ -1712,9 +1729,6 @@ msgstr "Tempo de validade da concessão"
 
 msgid "Leasefile"
 msgstr "Ficheiro de concessões"
-
-msgid "Leasetime"
-msgstr "Tempo de concessão"
 
 msgid "Leasetime remaining"
 msgstr "Tempo de atribuição restante"
@@ -2231,12 +2245,16 @@ msgstr ""
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
-msgstr ""
-
 msgid ""
 "Optional. Adds in an additional layer of symmetric-key cryptography for post-"
 "quantum resistance."
+msgstr ""
+
+msgid ""
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2383,6 +2401,9 @@ msgstr ""
 msgid "Password successfully changed!"
 msgstr "Password alterada com sucesso!"
 
+msgid "Password2"
+msgstr ""
+
 msgid "Path to CA-Certificate"
 msgstr "Directorio do Certificado CA"
 
@@ -2453,6 +2474,9 @@ msgid "Power Management Mode"
 msgstr ""
 
 msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
+msgid "Prefix Delegated"
 msgstr ""
 
 msgid "Preshared Key"
@@ -2713,7 +2737,7 @@ msgstr ""
 
 msgid ""
 "Requires the 'full' version of wpad/hostapd and support from the wifi driver "
-"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
+"<br />(as of Feb 2017: ath9k and ath10k, in BoluWrt also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -3704,6 +3728,13 @@ msgstr "Rede wireless reiniciada"
 msgid "Wireless shut down"
 msgstr "Desligar wireless"
 
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
+
 msgid "Write received DNS requests to syslog"
 msgstr "Escrever os pedidos de DNS para o syslog"
 
@@ -3727,7 +3758,11 @@ msgstr ""
 msgid ""
 "You must enable Java Script in your browser or LuCI will not work properly."
 msgstr ""
-"Tem de activar o Java Script no seu browser ou a LuCI não funcionará "
+
+msgid ""
+"You must enable JavaScript in your browser or LuCI will not work properly."
+msgstr ""
+"Tem de activar o JavaScript no seu browser ou a LuCI não funcionará "
 "corretamente."
 
 msgid ""
@@ -3741,10 +3776,6 @@ msgstr "qualquer"
 
 msgid "auto"
 msgstr "automático"
-
-#, fuzzy
-msgid "automatic"
-msgstr "estático"
 
 msgid "baseT"
 msgstr "baseT"
@@ -3823,9 +3854,6 @@ msgstr ""
 msgid "minutes"
 msgstr ""
 
-msgid "navigation Navigation"
-msgstr ""
-
 msgid "no"
 msgstr "não"
 
@@ -3857,12 +3885,6 @@ msgid "routed"
 msgstr ""
 
 msgid "server mode"
-msgstr ""
-
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
 msgstr ""
 
 msgid "stateful-only"
@@ -3900,6 +3922,13 @@ msgstr "sim"
 
 msgid "« Back"
 msgstr "« Voltar"
+
+#~ msgid "Leasetime"
+#~ msgstr "Tempo de concessão"
+
+#, fuzzy
+#~ msgid "automatic"
+#~ msgstr "estático"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "Uma rede adicional será criada se deixar isto desmarcado."

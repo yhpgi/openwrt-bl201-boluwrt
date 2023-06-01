@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2008 David Cooper <dave@kupesoft.com>
-# Copyright (C) 2006-2017 OpenWrt
+# Copyright (C) 2006-2017 BoluWrt
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.

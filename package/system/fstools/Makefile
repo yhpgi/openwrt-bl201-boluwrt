@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014-2015 OpenWrt.org
+# Copyright (C) 2014-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -11,10 +11,11 @@ PKG_NAME:=fstools
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/fstools.git
-PKG_SOURCE_DATE:=2016-12-04
-PKG_SOURCE_VERSION:=84b530a732b12cca1cd5ee9ba163b7ead7a83de3
-PKG_MIRROR_HASH:=b607138de1adbb7f49e53daebe28ac1352910fa2b29278365edeabafc5b46a91
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/fstools.git
+PKG_SOURCE_DATE:=2017-06-30
+PKG_SOURCE_VERSION:=bdcb075fafdac0bfe3207c23f64acd58432bad86
+PKG_MIRROR_HASH:=760a1fdbd379f1191947ac6ba9881a85a9b8c43f4a96d49db18d4654b0c312c4
+PKG_RELEASE:=1
 CMAKE_INSTALL:=1
 
 PKG_LICENSE:=GPL-2.0
@@ -38,7 +39,7 @@ define Package/fstools
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+ubox +USE_GLIBC:librt +NAND_SUPPORT:ubi-utils
-  TITLE:=OpenWrt filesystem tools
+  TITLE:=BoluWrt filesystem tools
   MENU:=1
 endef
 

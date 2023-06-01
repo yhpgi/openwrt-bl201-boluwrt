@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2009-2010 Stefan Monnier
-# Copyright (C) 2011-2014 OpenWrt.org
+# Copyright (C) 2011-2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v3+.
 # See /LICENSE for more information.

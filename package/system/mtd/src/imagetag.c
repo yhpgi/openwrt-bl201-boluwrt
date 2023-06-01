@@ -105,7 +105,7 @@ struct bcm_tag {
 	char inactive_flag[INACTIVEFLAG_LEN];
 	/* 142-161: RSA Signature (not used; some vendors may use this) */
 	char rsa_signature[RSASIG_LEN];
-	/* 162-191: Compilation and related information (not used in OpenWrt) */
+	/* 162-191: Compilation and related information (not used in BoluWrt) */
 	char information1[TAGINFO1_LEN];
 	/* 192-195: Version flash layout */
 	char flash_layout_ver[FLASHLAYOUTVER_LEN];
@@ -121,7 +121,7 @@ struct bcm_tag {
 	__u32 kernel_crc;
 	/* 228-231: Image sequence number */
 	char image_sequence[4];
-	/* 222-235: Openwrt: real rootfs length */
+	/* 222-235: BoluWrt: real rootfs length */
 	__u32 real_rootfs_length;
 	/* 236-239: CRC32 of header excluding last 20 bytes */
 	__u32 header_crc;

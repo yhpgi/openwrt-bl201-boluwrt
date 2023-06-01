@@ -1,6 +1,6 @@
-pppd: tune Linux config defaults for OpenWrt
+pppd: tune Linux config defaults for BoluWrt
 
-This patch adjusts a number defaults to properly match the OpenWrt environment.
+This patch adjusts a number defaults to properly match the BoluWrt environment.
 It is not intended for upstream.
 
 Signed-off-by: Jo-Philipp Wich <jo@mein.io>

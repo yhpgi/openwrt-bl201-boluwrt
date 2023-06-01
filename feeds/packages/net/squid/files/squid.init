@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2015 OpenWrt.org
+# Copyright (C) 2015 BoluWrt.org
 
 START=90
 STOP=10
@@ -16,7 +16,7 @@ validate_squid_section() {
 		'ssldb:string' \
 		'ssldb_options:string' \
 		'coredump_dir:string' \
-		'visible_hostname:string:OpenWrt' \
+		'visible_hostname:string:BoluWrt' \
 		'pinger_enable:string:off'
 }
 

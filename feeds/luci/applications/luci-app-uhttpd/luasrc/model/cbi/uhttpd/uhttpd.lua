@@ -137,7 +137,7 @@ o.optional = true
 
 o = ucs:taboption("server", Value, "realm", translate("Realm for Basic Auth"))
 o.optional = true
-o.placeholder = luci.sys.hostname() or "OpenWrt"
+o.placeholder = luci.sys.hostname() or "BoluWrt"
 
 local httpconfig = ucs:taboption("server", Value, "config", translate("Config file (e.g. for credentials for Basic Auth)"), translate("Will not use HTTP authentication if not present"))
 httpconfig.optional = true
@@ -202,14 +202,17 @@ o = ucs:taboption("advanced", Value, "max_requests", translate("Maximum number o
 o.optional = true
 o.datatype = "uinteger"
 
-local s = m:section(NamedSection, "px5g", "cert", translate("uHTTPd Self-signed Certificate Parameters"))
+local s = m:section(TypedSection, "cert", translate("uHTTPd Self-signed Certificate Parameters"))
+
+s.template  = "cbi/tsection"
+s.anonymous = true
 
 o = s:option(Value, "days", translate("Valid for # of Days"))
 o.default = 730
 o.datatype = "uinteger"
 
 o = s:option(Value, "bits", translate("Length of key in bits"))
-o.default = 1024
+o.default = 2048
 o.datatype = "min(1024)"
 
 o = s:option(Value, "commonname", translate("Server Hostname"), translate("a.k.a CommonName"))
@@ -222,6 +225,6 @@ o = s:option(Value, "state", translate("State"))
 o.default = "Unknown"
 
 o = s:option(Value, "location", translate("Location"))
-o.default = "Somewhere"
+o.default = "Unknown"
 
 return m

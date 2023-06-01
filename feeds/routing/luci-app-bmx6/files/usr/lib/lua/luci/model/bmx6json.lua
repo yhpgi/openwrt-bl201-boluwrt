@@ -41,9 +41,9 @@ function get(field, host)
 	local url
 	if host ~= nil then
 		if host:match(":") then
-			url = 'http://[%s]/cgi-bin/bmx6-info?' % host
+			url = 'http://[%s]/boluwrt/bmx6-info?' % host
 		else
-			url = 'http://%s/cgi-bin/bmx6-info?' % host
+			url = 'http://%s/boluwrt/bmx6-info?' % host
 		end
 	else
 		url = uci.cursor():get("luci-bmx6","luci","json")

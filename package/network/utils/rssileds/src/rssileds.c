@@ -1,5 +1,5 @@
 /*
- * configurable RSSI LED control daemon for OpenWrt
+ * configurable RSSI LED control daemon for BoluWrt
  *  (c) 2012 Allnet GmbH, Daniel Golle <dgolle@allnet.de>
  *
  * This program is free software; you can redistribute it and/or modify

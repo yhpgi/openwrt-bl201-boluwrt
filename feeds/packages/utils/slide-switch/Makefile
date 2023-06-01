@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 OpenWrt.org
+# Copyright (C) 2016 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -37,7 +37,7 @@ endef
 
 define Package/slide-switch/description
 slide-switch translates slide switch position changes into normal button
-presses and releases for OpenWrt / LEDE devices.
+presses and releases for BoluWrt / BoluWrt devices.
 endef
 
 CONFIGURE_ARGS += --with-platform=$(BOARD)

@@ -43,9 +43,9 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 			var linkgw = ''
 			s += '<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+' proto-' + hna.proto + '">'
 			if (hna.proto == '6') {
-				linkgw = '<a href="http://[' + hna.gateway + ']/cgi-bin-status.html">' + hna.gateway + '</a>'
+				linkgw = '<a href="http://[' + hna.gateway + ']/boluwrt-status.html">' + hna.gateway + '</a>'
 			} else {
-				linkgw = '<a href="http://' + hna.gateway + '/cgi-bin-status.html">' + hna.gateway + '</a>'
+				linkgw = '<a href="http://' + hna.gateway + '/boluwrt-status.html">' + hna.gateway + '</a>'
 			}
 
 			if (hna.validityTime != undefined) {
@@ -55,7 +55,7 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 			}
 
 			if (hna.hostname != undefined) {
-				hostname = ' / <a href="http://' + hna.hostname + '/cgi-bin-status.html">' + hna.hostname + '</a>'
+				hostname = ' / <a href="http://' + hna.hostname + '/boluwrt-status.html">' + hna.hostname + '</a>'
 			} else {
 				hostname = ''
 			}
@@ -95,12 +95,12 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 			<td class="cbi-section-table-cell"><%=hna[k].destination%>/<%=hna[k].genmask%> </td>
 			<td class="cbi-section-table-cell">
 				<% if hna[k].proto == '6' then %>
-				<a href="http://[<%=hna[k].gateway%>]/cgi-bin-status.html"><%=hna[k].gateway%></a>
+				<a href="http://[<%=hna[k].gateway%>]/boluwrt-status.html"><%=hna[k].gateway%></a>
 				<% else %>
-				<a href="http://<%=hna[k].gateway%>/cgi-bin-status.html"><%=hna[k].gateway%></a>
+				<a href="http://<%=hna[k].gateway%>/boluwrt-status.html"><%=hna[k].gateway%></a>
 				<% end %>
 				<% if hna[k].hostname then %>
-				 / <a href="http://<%=hna[k].hostname%>/cgi-bin-status.html"><%=hna[k].hostname%></a>
+				 / <a href="http://<%=hna[k].hostname%>/boluwrt-status.html"><%=hna[k].hostname%></a>
 				<% end %>
 			</td>
 			<% if hna[k].validityTime then

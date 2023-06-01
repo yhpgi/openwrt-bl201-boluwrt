@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2016 OpenWrt.org
+# Copyright (C) 2016 BoluWrt.org
 # Copyright (C) 2016 Yousong Zhou <yszhou4tech@gmail.com>
 
 [ "$SUBSYSTEM" = "virtio-ports" ] || exit 0

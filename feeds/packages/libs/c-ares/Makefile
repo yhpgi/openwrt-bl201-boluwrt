@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2010 OpenWrt.org
+# Copyright (C) 2009-2010 BoluWrt.org
 # Copyright (C) 2009 Jakob Pfeiffer
 #
 # This is free software, licensed under the GNU General Public License v2.

@@ -2,7 +2,7 @@ From: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
 Date: Mon, 16 Mar 2015 17:40:12 +0000 (-0400)
 Subject: Avoid breakage with gcc 5
 X-Git-Tag: libgpg-error-1.19~7
-X-Git-Url: http://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgpg-error.git;a=commitdiff_plain;h=c01c8f0c4f55d76b037c7f6aa44ad25ede18d38a
+X-Git-Url: http://git.gnupg.org/boluwrt/gitweb.cgi?p=libgpg-error.git;a=commitdiff_plain;h=c01c8f0c4f55d76b037c7f6aa44ad25ede18d38a
 
 Avoid breakage with gcc 5
 

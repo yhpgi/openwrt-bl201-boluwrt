@@ -24,4 +24,4 @@ rm -Rf /var/luci-indexcache
 exit 0
 endef
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

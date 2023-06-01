@@ -5,7 +5,7 @@ Subject: [PATCH 23/23] build: take compiler options from environment
 
 This makes it possible to compile IoTivity with custom compiler
 options. This way someone can use optimized compiler settings for the
-target CPU. I want to use this in OpenWrt / LEDE to build specific
+target CPU. I want to use this in BoluWrt / BoluWrt to build specific
 IoTivity binaries for each CPU architecture, there the build system
 provides the matching compiler options.
 

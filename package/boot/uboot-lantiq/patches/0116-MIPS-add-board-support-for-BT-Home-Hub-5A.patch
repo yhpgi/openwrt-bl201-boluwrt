@@ -331,7 +331,7 @@
 +#include <asm/lantiq/config.h>
 +#include <asm/arch/config.h>
 +
-+/* Pull in default OpenWrt configs for Lantiq SoC */
++/* Pull in default BoluWrt configs for Lantiq SoC */
 +#include "openwrt-lantiq-common.h"
 +
 +#undef CONFIG_BOOTCOMMAND

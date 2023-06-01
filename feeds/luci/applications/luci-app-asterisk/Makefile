@@ -10,4 +10,4 @@ LUCI_TITLE:=LuCI Support for Asterisk
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

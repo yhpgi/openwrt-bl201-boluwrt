@@ -4,10 +4,10 @@ PKG_NAME:=ubox
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/ubox.git
-PKG_SOURCE_DATE:=2017-01-15
-PKG_SOURCE_VERSION:=5649c028c426060616e2bd4e7ea83271cd333d21
-PKG_MIRROR_HASH:=ae77504a4397f92173a7646fa3555e5b51abd7ff1dd1c419770223359e41937a
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/ubox.git
+PKG_SOURCE_DATE:=2017-03-10
+PKG_SOURCE_VERSION:=16f7e16181e2f3e9cf3e2ce56a7e291844900d09
+PKG_MIRROR_HASH:=5f10f3df134eb8a69d281a73d39f5d2e2fc96af531a2f3960b0c6116ff11a707
 CMAKE_INSTALL:=1
 
 PKG_LICENSE:=GPL-2.0
@@ -24,14 +24,14 @@ define Package/ubox
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+libubox +ubusd +ubus +libubus +libuci +USE_GLIBC:librt
-  TITLE:=OpenWrt system helper toolbox
+  TITLE:=BoluWrt system helper toolbox
 endef
 
 define Package/logd
 SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+libubox +libubus +libblobmsg-json +USE_GLIBC:librt
-  TITLE:=OpenWrt system log implementation
+  TITLE:=BoluWrt system log implementation
 endef
 
 define Package/ubox/install

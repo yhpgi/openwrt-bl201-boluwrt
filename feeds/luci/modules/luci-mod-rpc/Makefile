@@ -11,5 +11,5 @@ LUCI_DEPENDS:=+luci-lib-json
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature
 

@@ -40,7 +40,7 @@ else
 	__FQDN="${__SUBDOM}.${__DOMAIN}"
 fi
 
-# parse OpenWrt script with
+# parse BoluWrt script with
 # functions for parsing and generating json
 . /usr/share/libubox/jshn.sh
 

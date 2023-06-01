@@ -65,19 +65,19 @@ end
 					if (neigh.proto == '6') {
 						s += String.format(
 							'<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+' proto-%s">' +
-							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://[%s]/cgi-bin-status.html">%s</a></td>',
+							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://[%s]/boluwrt-status.html">%s</a></td>',
 							neigh.proto, neigh.dfgcolor, neigh.rip, neigh.rip
 						);
 					} else {
 						s += String.format(
 							'<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+' proto-%s">' +
-							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://%s/cgi-bin-status.html">%s</a></td>',
+							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://%s/boluwrt-status.html">%s</a></td>',
 							neigh.proto, neigh.dfgcolor, neigh.rip, neigh.rip
 						);
 					}
 					if (neigh.hn) {
 						s += String.format(
-							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://%s/cgi-bin-status.html">%s</a></td>',
+							'<td class="cbi-section-table-titles" style="background-color:%s"><a href="http://%s/boluwrt-status.html">%s</a></td>',
 							neigh.dfgcolor, neigh.hn, neigh.hn
 						);
 					} else {
@@ -149,11 +149,11 @@ end
 
 		<tr class="cbi-section-table-row cbi-rowstyle-<%=i%> proto-<%=link.proto%>">
 			<% if link.proto == "6" then %>
-			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://[<%=link.remoteIP%>]/cgi-bin-status.html"><%=link.remoteIP%></a></td>
+			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://[<%=link.remoteIP%>]/boluwrt-status.html"><%=link.remoteIP%></a></td>
 			<% else %>
-			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://<%=link.remoteIP%>/cgi-bin-status.html"><%=link.remoteIP%></a></td>
+			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://<%=link.remoteIP%>/boluwrt-status.html"><%=link.remoteIP%></a></td>
 			<% end %>
-			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://<%=link.hostname%>/cgi-bin-status.html"><%=link.hostname%></a></td>
+			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><a href="http://<%=link.hostname%>/boluwrt-status.html"><%=link.hostname%></a></td>
 			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><%=link.interface%></td>
 			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><%=link.localIP%></td>
 			<td class="cbi-section-table-titles" style="background-color:<%=defaultgw_color%>"><%=string.format("%.3f", link.linkQuality)%></td>

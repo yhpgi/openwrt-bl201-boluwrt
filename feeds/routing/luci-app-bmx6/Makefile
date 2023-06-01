@@ -55,7 +55,7 @@ endef
 
 define Package/luci-app-bmx6/install
 	$(CP) ./files/* $(1)/
-	chmod 755 $(1)/www/cgi-bin/bmx6-info
+	chmod 755 $(1)/www/boluwrt/bmx6-info
 endef
 
 $(eval $(call BuildPackage,luci-app-bmx6))

@@ -4,10 +4,10 @@ PKG_NAME:=ubus
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/ubus.git
-PKG_SOURCE_DATE:=2017-01-22
-PKG_SOURCE_VERSION:=6f4e11e1db399074273944329883f9c35e7daef6
-PKG_MIRROR_HASH:=4b80cf4ff8fa0e103d6626014404c031a9e886b8fbc422fb65a9c36b3b787585
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/ubus.git
+PKG_SOURCE_DATE:=2017-02-18
+PKG_SOURCE_VERSION:=34c6e818e431cc53478a0f7c7c1eca07d194d692
+PKG_MIRROR_HASH:=fc4f1121faa4f5b8fa52ee25460b98b2e60e7d245aefa70e7f76c56ce5628fd5
 CMAKE_INSTALL:=1
 
 PKG_LICENSE:=LGPL-2.1
@@ -22,13 +22,13 @@ define Package/ubus
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+libubus +libblobmsg-json +ubusd
-  TITLE:=OpenWrt RPC client utility
+  TITLE:=BoluWrt RPC client utility
 endef
 
 define Package/ubusd
   SECTION:=base
   CATEGORY:=Base system
-  TITLE:=OpenWrt RPC daemon
+  TITLE:=BoluWrt RPC daemon
   DEPENDS:=+libubox +libblobmsg-json
 endef
 
@@ -37,14 +37,14 @@ define Package/libubus
   CATEGORY:=Libraries
   DEPENDS:=+libubox
   ABI_VERSION:=$(PKG_VERSION)
-  TITLE:=OpenWrt RPC client library
+  TITLE:=BoluWrt RPC client library
 endef
 
 define Package/libubus-lua
   SECTION:=libs
   CATEGORY:=Libraries
   DEPENDS:=+libubus +liblua
-  TITLE:=Lua binding for the OpenWrt RPC client
+  TITLE:=Lua binding for the BoluWrt RPC client
 endef
 
 TARGET_CFLAGS += -I$(STAGING_DIR)/usr/include

@@ -1,6 +1,6 @@
 #
-# Copyright (C) 2008-2014 OpenWrt.org
-# Copyright (C) 2016 LEDE project
+# Copyright (C) 2008-2014 BoluWrt.org
+# Copyright (C) 2016 BoluWrt project
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -11,7 +11,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=uci
 PKG_RELEASE:=1
 
-PKG_SOURCE_URL=$(LEDE_GIT)/project/uci.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/uci.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE=2016-07-04
 PKG_SOURCE_VERSION:=e1bf4356e1b513e158e1b5049147087ed6342cfd

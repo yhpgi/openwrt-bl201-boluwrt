@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2007-2012 OpenWrt.org
+# Copyright (C) 2007-2012 BoluWrt.org
 
 START=19
 
@@ -392,6 +392,14 @@ dhcp_add() {
 	dhcp_option_add "$cfg" "$networkid"
 }
 
+dhcp_option_append() {
+	local option="$1"
+	local networkid="$2"
+	local force="$3"
+
+	xappend "--dhcp-option${force:+-force}=${networkid:+$networkid,}$option"
+}
+
 dhcp_option_add() {
 	local cfg="$1"
 	local networkid="$2"
@@ -399,11 +407,21 @@ dhcp_option_add() {
 
 	[ "$force" = "0" ] && force=
 
-	config_get dhcp_option "$cfg" dhcp_option
-	for o in $dhcp_option; do
-		xappend "--dhcp-option${force:+-force}=${networkid:+$networkid,}$o"
-	done
+	local list_len
+	config_get list_len "$cfg" dhcp_option_LENGTH
 
+	if [ -n "$list_len" ]; then
+		config_list_foreach "$cfg" dhcp_option dhcp_option_append "$networkid" "$force"
+	else
+		config_get dhcp_option "$cfg" dhcp_option
+
+		[ -n "$dhcp_option" ] && echo "Warning: the 'option dhcp_option' syntax is deprecated, use 'list dhcp_option'" >&2
+
+		local option
+		for option in $dhcp_option; do
+			dhcp_option_append "$option" "$networkid" "$force"
+		done
+	fi
 }
 
 dhcp_domain_add() {
@@ -508,7 +526,8 @@ dhcp_relay_add() {
 	if [ -z "$interface" ]; then
 		xappend "--dhcp-relay=$local_addr,$server_addr"
 	else
-		xappend "--dhcp-relay=$local_addr,$server_addr,$interface"
+		network_get_device ifname "$interface" || return
+		xappend "--dhcp-relay=$local_addr,$server_addr,$ifname"
 	fi
 }
 
@@ -562,7 +581,7 @@ dnsmasq_start()
 	append_bool "$cfg" boguspriv "--bogus-priv"
 	append_bool "$cfg" expandhosts "--expand-hosts"
 	config_get tftp_root "$cfg" "tftp_root"
-	[ -d "$tftp_root" ] && append_bool "$cfg" enable_tftp "--enable-tftp"
+	[ -n "$tftp_root" ] && mkdir -p "$tftp_root" && append_bool "$cfg" enable_tftp "--enable-tftp"
 	append_bool "$cfg" tftp_no_fail "--tftp-no-fail"
 	append_bool "$cfg" nonwildcard "--bind-dynamic"
 	append_bool "$cfg" fqdn "--dhcp-fqdn"

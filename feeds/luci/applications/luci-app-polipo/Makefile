@@ -11,4 +11,4 @@ LUCI_DEPENDS:=+polipo
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

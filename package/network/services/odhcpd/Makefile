@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013-2015 OpenWrt.org
+# Copyright (C) 2013-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,13 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=odhcpd
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/odhcpd.git
-PKG_SOURCE_DATE:=2017-02-09
-PKG_SOURCE_VERSION:=8df4253ba73246d31f2e65f2004da3f9890c22c5
-PKG_MIRROR_HASH:=0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/odhcpd.git
+PKG_SOURCE_DATE:=2017-10-02
+PKG_SOURCE_VERSION:=c6f3d5d4ea5154e5971fa0b1b1e9a9c07119429f
+PKG_MIRROR_HASH:=5ce8f52b5c6acea27d9733918e9c3bc8a154d516a02eef9b172c5e3d459f494c
 
 PKG_MAINTAINER:=Hans Dedecker <dedeckeh@gmail.com>
 PKG_LICENSE:=GPL-2.0
@@ -32,7 +32,7 @@ endif
 define Package/odhcpd
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=OpenWrt DHCP/DHCPv6(-PD)/RA Server & Relay
+  TITLE:=BoluWrt DHCP/DHCPv6(-PD)/RA Server & Relay
   DEPENDS:=+libubox +libuci +libubus +libnl-tiny
 endef
 

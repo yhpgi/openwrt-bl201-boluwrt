@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2013-2014 wrtnode.com
-# Copyright (C) 2015-2016 OpenWrt.org
+# Copyright (C) 2015-2016 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.

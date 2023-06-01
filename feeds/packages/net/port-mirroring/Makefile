@@ -1,5 +1,5 @@
 # 
-# Copyright (c) 2015 OpenWrt.org
+# Copyright (c) 2015 BoluWrt.org
 #
 # This is free software, licensed under the BSD 2-Clause License.
 #

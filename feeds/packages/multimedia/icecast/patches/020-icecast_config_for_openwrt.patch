@@ -5,7 +5,7 @@
           listings. You MUST configure it properly for YP listings to work!
      -->
 -    <hostname>localhost</hostname>
-+    <hostname>OpenWrt</hostname>
++    <hostname>BoluWrt</hostname>
  
      <!-- You may have multiple <listener> elements -->
      <listen-socket>

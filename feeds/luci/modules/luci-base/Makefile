@@ -45,4 +45,4 @@ endef
 
 $(eval $(call HostBuild))
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

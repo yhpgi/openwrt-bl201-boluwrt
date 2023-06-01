@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2013 OpenWrt.org
+# Copyright (C) 2013 BoluWrt.org
 
 led_set_attr() {
 	[ -f "/sys/class/leds/$1/$2" ] && echo "$3" > "/sys/class/leds/$1/$2"

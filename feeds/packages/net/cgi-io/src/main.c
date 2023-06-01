@@ -614,7 +614,7 @@ main_backup(int argc, char **argv)
 		strftime(datestr, sizeof(datestr) - 1, "%Y-%m-%d", localtime(&now));
 
 		if (gethostname(hostname, sizeof(hostname) - 1))
-			sprintf(hostname, "OpenWrt");
+			sprintf(hostname, "BoluWrt");
 
 		printf("Status: 200 OK\r\n");
 		printf("Content-Type: application/x-targz\r\n");

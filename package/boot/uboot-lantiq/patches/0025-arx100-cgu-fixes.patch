@@ -2,12 +2,12 @@ From patchwork Tue Jan 20 11:28:45 2015
 Content-Type: text/plain; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
-Subject: [OpenWrt-Devel] uboot-lantiq cgu settings for ramboot image
+Subject: [BoluWrt-Devel] uboot-lantiq cgu settings for ramboot image
 From: Ben Mulvihill <ben.mulvihill@gmail.com>
 X-Patchwork-Id: 431024
 Message-Id: <1421753325.25187.58.camel@merveille.lan>
 To: Daniel Schwierzeck <daniel.schwierzeck@gmail.com>
-Cc: OpenWrt Development List <openwrt-devel@lists.openwrt.org>
+Cc: BoluWrt Development List <openwrt-devel@lists.openwrt.org>
 Date: Tue, 20 Jan 2015 12:28:45 +0100
 
 On Tue, 2015-01-20 at 00:39 +0100, Ben Mulvihill wrote:

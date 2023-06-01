@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2006 OpenWrt.org
+# Copyright (C) 2006 BoluWrt.org
 
 setup_switch_vlan() {
 	config_get ports "$CONFIG_SECTION" "eth$1"

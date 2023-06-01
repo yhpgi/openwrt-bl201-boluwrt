@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008-2015 OpenWrt.org
+# Copyright (C) 2008-2015 BoluWrt.org
 # Copyright (C) 2016 Luiz Angelo Daros de Luca
 #
 # This is free software, licensed under the GNU General Public License v2.

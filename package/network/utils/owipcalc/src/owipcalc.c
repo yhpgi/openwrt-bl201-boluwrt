@@ -1,5 +1,5 @@
 /*
- * owipcalc - OpenWrt IP Calculator
+ * owipcalc - BoluWrt IP Calculator
  *
  *   Copyright (C) 2012 Jo-Philipp Wich <jo@mein.io>
  *

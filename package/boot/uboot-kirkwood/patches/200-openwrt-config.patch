@@ -5,7 +5,7 @@
  source "board/zyxel/nsa310s/Kconfig"
  
 +config SECOND_STAGE
-+	bool "OpenWrt second stage hack"
++	bool "BoluWrt second stage hack"
 +
  endif
 --- a/include/configs/dockstar.h

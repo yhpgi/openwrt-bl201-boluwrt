@@ -1,7 +1,7 @@
-This is an OpenWrt package feed containing community maintained routing packages.
+This is an BoluWrt package feed containing community maintained routing packages.
 
 To use these packages, add the following line to the feeds.conf
-in the OpenWrt buildroot:
+in the BoluWrt buildroot:
 
   src-git routing git://github.com/openwrt-routing/packages.git
   

@@ -147,6 +147,11 @@ msgstr "<abbr title=\"maximal\">最大</abbr>並發查詢數"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -409,9 +414,6 @@ msgid "Atheros 802.11%s Wireless Controller"
 msgstr "Atheros 802.11%s 無線控制器"
 
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -1023,6 +1025,9 @@ msgstr "啟用VLAN功能"
 msgid "Enable WPS pushbutton, requires WPA(2)-PSK"
 msgstr ""
 
+msgid "Enable key reinstallation (KRACK) countermeasures"
+msgstr ""
+
 msgid "Enable learning and aging"
 msgstr "啟用智慧學習功能"
 
@@ -1443,8 +1448,14 @@ msgstr "IPv6字首長度"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "IPv6-位址"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6包覆在IPv4內(RFC4213)"
@@ -1544,6 +1555,9 @@ msgstr "安裝軟體包"
 msgid "Interface"
 msgstr "介面"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "介面設定"
 
@@ -1596,6 +1610,9 @@ msgid ""
 msgstr "它顯示你正嘗試更新不適用於這個flash記憶體的映像檔,請檢查確認這個映像檔"
 
 msgid "Java Script required!"
+msgstr ""
+
+msgid "JavaScript required!"
 msgstr "需要Java腳本"
 
 msgid "Join Network"
@@ -1663,9 +1680,6 @@ msgstr "租賃有效時間"
 
 msgid "Leasefile"
 msgstr "租賃檔案"
-
-msgid "Leasetime"
-msgstr "租賃時間"
 
 msgid "Leasetime remaining"
 msgstr "租賃保留時間"
@@ -2171,12 +2185,16 @@ msgstr ""
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
-msgstr ""
-
 msgid ""
 "Optional. Adds in an additional layer of symmetric-key cryptography for post-"
 "quantum resistance."
+msgstr ""
+
+msgid ""
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2323,6 +2341,9 @@ msgstr ""
 msgid "Password successfully changed!"
 msgstr "密碼已變更成功!"
 
+msgid "Password2"
+msgstr ""
+
 msgid "Path to CA-Certificate"
 msgstr "CA-證書的路徑"
 
@@ -2393,6 +2414,9 @@ msgid "Power Management Mode"
 msgstr ""
 
 msgid "Pre-emtive CRC errors (CRCP_P)"
+msgstr ""
+
+msgid "Prefix Delegated"
 msgstr ""
 
 msgid "Preshared Key"
@@ -2651,7 +2675,7 @@ msgstr ""
 
 msgid ""
 "Requires the 'full' version of wpad/hostapd and support from the wifi driver "
-"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
+"<br />(as of Feb 2017: ath9k and ath10k, in BoluWrt also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -3412,7 +3436,7 @@ msgid ""
 "compatible firmware image)."
 msgstr ""
 "上傳一個sysupgrade-相容的映像檔在這以便替代正執行中的韌體. 勾選\"保持設定\"以"
-"保留目前設定值(必須要是OpenWrt/LEDE相容性韌體映像檔)."
+"保留目前設定值(必須要是BoluWrt/BoluWrt相容性韌體映像檔)."
 
 msgid "Upload archive..."
 msgstr "上傳壓縮檔..."
@@ -3633,6 +3657,13 @@ msgstr "無線網路已重啟"
 msgid "Wireless shut down"
 msgstr "無線網路關閉"
 
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
+
 msgid "Write received DNS requests to syslog"
 msgstr "寫入已接收的DNS請求到系統日誌中"
 
@@ -3652,7 +3683,11 @@ msgstr ""
 
 msgid ""
 "You must enable Java Script in your browser or LuCI will not work properly."
-msgstr "在瀏覽器你必須啟用Java Script否則LuCI無法正常運作."
+msgstr ""
+
+msgid ""
+"You must enable JavaScript in your browser or LuCI will not work properly."
+msgstr "在瀏覽器你必須啟用JavaScript否則LuCI無法正常運作."
 
 msgid ""
 "Your Internet Explorer is too old to display this page correctly. Please "
@@ -3665,9 +3700,6 @@ msgstr "任意"
 
 msgid "auto"
 msgstr "自動"
-
-msgid "automatic"
-msgstr ""
 
 msgid "baseT"
 msgstr "baseT"
@@ -3745,9 +3777,6 @@ msgstr ""
 msgid "minutes"
 msgstr ""
 
-msgid "navigation Navigation"
-msgstr ""
-
 msgid "no"
 msgstr "無"
 
@@ -3779,12 +3808,6 @@ msgid "routed"
 msgstr "路由"
 
 msgid "server mode"
-msgstr ""
-
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
 msgstr ""
 
 msgid "stateful-only"
@@ -3822,6 +3845,9 @@ msgstr "是的"
 
 msgid "« Back"
 msgstr "« 倒退"
+
+#~ msgid "Leasetime"
+#~ msgstr "租賃時間"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "取消選取將會另外建立一個新網路，而不會覆蓋目前的網路設定"

@@ -17,11 +17,21 @@ msgstr "Disk"
 msgid "Enable"
 msgstr "Enable"
 
-msgid "Idle-time"
-msgstr "Idle-time"
+msgid "HDD Idle"
+msgstr ""
 
-msgid "Idle-time unit"
-msgstr "Idle-time unit"
+msgid ""
+"HDD Idle is a utility program for spinning-down external disks after a "
+"period of idle time."
+msgstr ""
+"HDD Idle is a utility program for spinning-down external disks after a "
+"period of idle time."
+
+msgid "Idle time"
+msgstr "Idle time"
+
+msgid "Idle time unit"
+msgstr "Idle time unit"
 
 msgid "Settings"
 msgstr "Settings"
@@ -29,16 +39,6 @@ msgstr "Settings"
 # Hours
 msgid "h"
 msgstr "h"
-
-msgid "hd-idle"
-msgstr ""
-
-msgid ""
-"hd-idle is a utility program for spinning-down external disks after a period "
-"of idle time."
-msgstr ""
-"hd-idle is a utility program for spinning-down external disks after a period "
-"of idle time."
 
 # Minutes (not minimum)
 msgid "min"

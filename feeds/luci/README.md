@@ -1,8 +1,8 @@
-# OpenWrt luci feed
+# BoluWrt luci feed
 
 ## Description
 
-This is the OpenWrt "luci"-feed containing LuCI - OpenWrt Configuration Interface.
+This is the BoluWrt "luci"-feed containing LuCI - BoluWrt Configuration Interface.
 
 ## Usage
 

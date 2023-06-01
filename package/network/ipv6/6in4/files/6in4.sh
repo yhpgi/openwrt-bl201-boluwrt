@@ -1,6 +1,6 @@
 #!/bin/sh
 # 6in4.sh - IPv6-in-IPv4 tunnel backend
-# Copyright (c) 2010-2015 OpenWrt.org
+# Copyright (c) 2010-2015 BoluWrt.org
 
 [ -n "$INCLUDE_ONLY" ] || {
 	. /lib/functions.sh
@@ -84,7 +84,7 @@ proto_6in4_setup() {
 		local http="http"
 		local urlget="uclient-fetch"
 		local urlget_opts="-qO-"
-		local ca_path="${SSL_CERT_DIR-/etc/ssl/certs}"
+		local ca_path="${SSL_CERT_DIR:-/etc/ssl/certs}"
 
 		[ -f /lib/libustream-ssl.so ] && http=https
 		[ "$http" = "https" -a -z "$(find $ca_path -name "*.0" 2>/dev/null)" ] && {

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2009-2016 OpenWrt.org
+# Copyright (C) 2009-2016 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -83,7 +83,7 @@ MAKE_FLAGS := \
 	NO_PYTHON="YesPlease" \
 	NO_TCLTK="YesPlease" \
 	NO_INSTALL_HARDLINKS="yes" \
-	gitwebdir="/www/cgi-bin" \
+	gitwebdir="/www/boluwrt" \
 	GITWEB_JS="/gitweb/gitweb.js" \
 	GITWEB_CSS="/gitweb/gitweb.css" \
 	GITWEB_LOGO="/gitweb/gitweb-logo.png" \
@@ -100,7 +100,7 @@ define Build/Configure
 endef
 
 define Build/Compile
-	mkdir -p $(PKG_INSTALL_DIR)/www/cgi-bin $(PKG_INSTALL_DIR)/www/gitweb
+	mkdir -p $(PKG_INSTALL_DIR)/www/boluwrt $(PKG_INSTALL_DIR)/www/gitweb
 	$(call Build/Compile/Default,DESTDIR=$(PKG_INSTALL_DIR) all install gitweb install-gitweb)
 endef
 
@@ -135,9 +135,9 @@ define Package/git-http/install
 endef
 
 define Package/git-gitweb/install
-	$(INSTALL_DIR) $(1)/www/cgi-bin $(1)/www/gitweb
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/www/cgi-bin/gitweb.cgi $(1)/www/cgi-bin/
-	$(CP) $(PKG_INSTALL_DIR)/www/cgi-bin/static/* $(1)/www/gitweb/
+	$(INSTALL_DIR) $(1)/www/boluwrt $(1)/www/gitweb
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/www/boluwrt/gitweb.cgi $(1)/www/boluwrt/
+	$(CP) $(PKG_INSTALL_DIR)/www/boluwrt/static/* $(1)/www/gitweb/
 endef
 
 $(eval $(call BuildPackage,git))

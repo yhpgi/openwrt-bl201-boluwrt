@@ -80,7 +80,7 @@ logfileformat.default = "1"
 accessdeniedaddress = s:taboption("tab_general", Value, "accessdeniedaddress", translate("Access denied address"),
 translate("Server to which the cgi e2guardian reporting script was copied. Reporting levels 1 and 2 only"))
 accessdeniedaddress.datatype = "string"
-accessdeniedaddress.default = "http://YOURSERVER.YOURDOMAIN/cgi-bin/e2guardian.pl"
+accessdeniedaddress.default = "http://YOURSERVER.YOURDOMAIN/boluwrt/e2guardian.pl"
 
 usecustombannedimage = s:taboption("tab_general", ListValue, "usecustombannedimage", translate("Banned image replacement"))
 usecustombannedimage:value("on",  translate("Yes"))

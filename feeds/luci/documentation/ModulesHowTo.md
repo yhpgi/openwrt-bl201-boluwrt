@@ -1,7 +1,7 @@
 *Note:* If you plan to integrate your module into LuCI, you should read the [wiki:Documentation/Modules Module Reference] before.
 
 This tutorial describes how to write your own modules for the LuCI WebUI.
-For this tutorial we refer to your LuCI installation directory as *lucidir_' (/usr/lib/lua/luci if you are working with an installed version) and assume your LuCI installation is reachable through your webserver via '_/cgi-bin/luci*.
+For this tutorial we refer to your LuCI installation directory as *lucidir_' (/usr/lib/lua/luci if you are working with an installed version) and assume your LuCI installation is reachable through your webserver via '_/boluwrt/bolu*.
 
 If you are working with the development environment replace *lucidir_' with '''''/path/to/your/luci/checkout''/applications/myapplication/luasrc''' (this is a default empty module you can use for your experiments) and your LuCI installation can probably be reached via http://localhost:8080/luci/ after you ran '_make runhttpd*.
 
@@ -10,7 +10,7 @@ If you are working with the development environment replace *lucidir_' with ''''
 # Show me the way (The dispatching process)
 To write a module you need to understand the basics of the dispatching process in LuCI.
 LuCI uses a dispatching tree that will be built by executing the index-Function of every available controller.
-The CGI-environment variable *PATH_INFO* will be used as the path in this dispatching tree, e.g.: /cgi-bin/luci/foo/bar/baz
+The CGI-environment variable *PATH_INFO* will be used as the path in this dispatching tree, e.g.: /boluwrt/bolu/foo/bar/baz
 will be resolved to foo.bar.baz
 
 To register a function in the dispatching tree, you can use the *entry*-function of _luci.dispatcher_. entry takes 4 arguments (2 are optional):
@@ -73,7 +73,7 @@ Reopen *_lucidir_/controller/myapp/mymodule.lua* and just add a function to it s
 	end
 	
 
-And now type */cgi-bin/luci/click/here/now_' ('_[http://localhost:8080/luci/click/here/now]* if you are using the development environment) in your browser.
+And now type */boluwrt/bolu/click/here/now_' ('_[http://localhost:8080/luci/click/here/now]* if you are using the development environment) in your browser.
 
 You see these action functions simple have to be added to a dispatching entry.
 
@@ -96,7 +96,7 @@ and add the following line to the index-Function of your module file.
 	entry({"my", "new", "template"}, template("myapp-mymodule/helloworld"), "Hello world", 20).dependent=false
 	
 
-Now type */cgi-bin/luci/my/new/template_' ('_[http://localhost:8080/luci/my/new/template]* if you are using the development environment) in your browser.
+Now type */boluwrt/bolu/my/new/template_' ('_[http://localhost:8080/luci/my/new/template]* if you are using the development environment) in your browser.
 
 You may notice those fancy <% %>-Tags, these are [wiki:Documentation/Templates|template markups] used by the LuCI template processor.
 It is always good to include header and footer at the beginning and end of a template as those create the default design and menu.

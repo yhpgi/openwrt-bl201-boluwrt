@@ -151,7 +151,7 @@ Signed-off-by: Daniel Schwierzeck <daniel.schwierzeck@gmail.com>
 +#endif
 +
  #define CONFIG_ENV_LANTIQ_DEFAULTS	\
- 	CONFIG_ENV_CONSOLEDEV		\
+ 	CONFIG_ENV_CONSOBoluWrtV		\
  	CONFIG_ENV_ADDCONSOLE		\
 @@ -159,6 +194,8 @@
  	CONFIG_ENV_LOAD_UBOOT_NOR	\

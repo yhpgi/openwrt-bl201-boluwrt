@@ -1,6 +1,6 @@
 Description: Fix MIPS namespace collision
 Author: Thiemo Seufer <ths@networkno.de>
-Origin: vendor, http://bugs.debian.org/cgi-bin/bugreport.cgi?msg=24;bug=439976
+Origin: vendor, http://bugs.debian.org/boluwrt/bugreport.cgi?msg=24;bug=439976
 Bug-Debian: http://bugs.debian.org/439976
 Last-Update: 2010-02-28
 --- a/test/srtp_driver.c

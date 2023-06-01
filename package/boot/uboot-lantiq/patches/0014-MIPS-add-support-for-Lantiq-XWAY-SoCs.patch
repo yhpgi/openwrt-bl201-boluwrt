@@ -4541,7 +4541,7 @@ Signed-off-by: Daniel Schwierzeck <daniel.schwierzeck@gmail.com>
 +#define CONFIG_TIMESTAMP
 +
 +/* Default environment */
-+#define CONFIG_ENV_CONSOLEDEV					\
++#define CONFIG_ENV_CONSOBoluWrtV					\
 +	"consoledev=" CONFIG_CONSOLE_DEV "\0"
 +
 +#define CONFIG_ENV_ADDCONSOLE					\
@@ -4607,7 +4607,7 @@ Signed-off-by: Daniel Schwierzeck <daniel.schwierzeck@gmail.com>
 +#endif
 +
 +#define CONFIG_ENV_LANTIQ_DEFAULTS	\
-+	CONFIG_ENV_CONSOLEDEV		\
++	CONFIG_ENV_CONSOBoluWrtV		\
 +	CONFIG_ENV_ADDCONSOLE		\
 +	CONFIG_ENV_NETDEV		\
 +	CONFIG_ENV_ADDIP		\

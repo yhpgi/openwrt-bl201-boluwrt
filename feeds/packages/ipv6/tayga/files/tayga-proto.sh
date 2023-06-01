@@ -1,6 +1,6 @@
 #!/bin/sh
 # tayga.sh - TAYGA proto
-# Copyright (c) 2014 OpenWrt.org
+# Copyright (c) 2014 BoluWrt.org
 
 [ -n "$INCLUDE_ONLY" ] || {
 	. /lib/functions.sh

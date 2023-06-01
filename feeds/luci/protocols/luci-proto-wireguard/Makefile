@@ -13,4 +13,4 @@ PKG_MAINTAINER:=Dan Luedtke <mail@danrl.com>
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

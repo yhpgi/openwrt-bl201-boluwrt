@@ -101,7 +101,7 @@ start_instance()
 	fi
 
 	append_arg "$cfg" home "-h"
-	append_arg "$cfg" realm "-r" "${realm:-OpenWrt}"
+	append_arg "$cfg" realm "-r" "${realm:-BoluWrt}"
 	append_arg "$cfg" config "-c"
 	append_arg "$cfg" cgi_prefix "-x"
 	[ -f /usr/lib/uhttpd_lua.so ] && {

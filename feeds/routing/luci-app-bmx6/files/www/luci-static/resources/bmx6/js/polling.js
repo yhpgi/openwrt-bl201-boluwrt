@@ -24,7 +24,7 @@
 /*
 	Table pooler is a function to easy call XHR poller. 
 
-		new TablePooler(5,"/cgi-bin/bmx6-info", {'status':''}, "status_table", function(st){
+		new TablePooler(5,"/boluwrt/bmx6-info", {'status':''}, "status_table", function(st){
 			var table = Array()
 			table.push(st.first,st.second)
 			return table

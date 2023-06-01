@@ -58,9 +58,9 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 			var smartgw = info[idx];
 			s += '<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+' proto-' + smartgw.proto + '">'
 			if (smartgw.proto == '6') {
-				linkgw = '<a href="http://[' + smartgw.ipAddress + ']/cgi-bin-status.html">' + smartgw.ipAddress + '</a>'
+				linkgw = '<a href="http://[' + smartgw.ipAddress + ']/boluwrt-status.html">' + smartgw.ipAddress + '</a>'
 			} else {
-				linkgw = '<a href="http://' + smartgw.ipAddress + '/cgi-bin-status.html">' + smartgw.ipAddress + '</a>'
+				linkgw = '<a href="http://' + smartgw.ipAddress + '/boluwrt-status.html">' + smartgw.ipAddress + '</a>'
 			}
 
 			s += String.format(
@@ -121,9 +121,9 @@ XHR.poll(10, '<%=REQUEST_URI%>', { status: 1 },
 
 			<tr class="cbi-section-table-row cbi-rowstyle-<%=i%> proto-<%=proto%>">
 				<% if gw.proto == '6' then %>
-					<td class="cbi-section-table-cell"><a href="http://[<%=gw.ipAddress%>]/cgi-bin-status.html"><%=gw.ipAddress%></a></td>
+					<td class="cbi-section-table-cell"><a href="http://[<%=gw.ipAddress%>]/boluwrt-status.html"><%=gw.ipAddress%></a></td>
 				<% else %>
-					<td class="cbi-section-table-cell"><a href="http://<%=gw.ipAddress%>/cgi-bin-status.html"><%=gw.ipAddress%></a></td>
+					<td class="cbi-section-table-cell"><a href="http://<%=gw.ipAddress%>/boluwrt-status.html"><%=gw.ipAddress%></a></td>
 				<% end %>
 
 				<td class="cbi-section-table-cell"><%=gw.ipv4Status or gw.ipv6Status or '-' %></td>

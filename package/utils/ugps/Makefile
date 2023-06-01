@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ugps
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
-PKG_SOURCE_URL=$(LEDE_GIT)/project/ugps.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/ugps.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE:=2016-10-24
 PKG_SOURCE_VERSION:=32a6b2b702c3b9f8c425f3d9dc9f4273e276029c
@@ -25,7 +25,7 @@ include $(INCLUDE_DIR)/cmake.mk
 define Package/ugps
   SECTION:=utils
   CATEGORY:=Utilities
-  TITLE:=OpenWrt GPS Daemon
+  TITLE:=BoluWrt GPS Daemon
   DEPENDS:=+libubox +libubus
 endef
 

@@ -11,4 +11,4 @@ LUCI_DEPENDS:=+ushare @BROKEN
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

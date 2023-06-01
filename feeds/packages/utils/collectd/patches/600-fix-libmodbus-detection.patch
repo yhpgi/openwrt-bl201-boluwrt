@@ -2,7 +2,7 @@ Patch reverts upstream commit:
 https://github.com/collectd/collectd/commit/6124da7a48f28f54fc09ebeb942d1037516fe6ab
 
 The commit changed the detection path due to FreeBSD issues,
-but apparently affects also Openwrt buildroot negatively.
+but apparently affects also BoluWrt buildroot negatively.
 
 Original explanation:
   From 6124da7a48f28f54fc09ebeb942d1037516fe6ab Mon Sep 17 00:00:00 2001

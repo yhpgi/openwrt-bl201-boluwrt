@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014-2016 OpenWrt.org
+# Copyright (C) 2014-2016 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -11,10 +11,10 @@ PKG_NAME:=procd
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/procd.git
-PKG_SOURCE_DATE:=2017-02-08
-PKG_SOURCE_VERSION:=cdc3dab3cd5d0295f638de3088bc4f5c9669e7c2
-PKG_MIRROR_HASH:=97d57f0f117a3a5b353a904d4ad7091a008d3c93672652c771ac38dd78bb0530
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/procd.git
+PKG_SOURCE_DATE:=2017-08-08
+PKG_SOURCE_VERSION:=66be6a23d71fcc068d6b813f0e0be2f8f0b6aa88
+PKG_MIRROR_HASH:=286dcc8855f1dc403895bc9252f617c14be6f7f6ec36f13d4f4de7c4a715f08c
 CMAKE_INSTALL:=1
 
 PKG_LICENSE:=GPL-2.0
@@ -43,35 +43,35 @@ define Package/procd
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+ubusd +ubus +libjson-script +ubox +USE_GLIBC:librt +libubox +libubus +NAND_SUPPORT:procd-nand
-  TITLE:=OpenWrt system process manager
+  TITLE:=BoluWrt system process manager
 endef
 
 define Package/procd-ujail
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=@KERNEL_NAMESPACES +@KERNEL_UTS_NS +@KERNEL_IPC_NS +@KERNEL_PID_NS +libubox +libblobmsg-json
-  TITLE:=OpenWrt process jail helper
+  TITLE:=BoluWrt process jail helper
 endef
 
 define Package/procd-seccomp
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=@arm||@armeb||@mips||@mipsel||@i386||@x86_64 @!TARGET_uml @KERNEL_SECCOMP +libubox +libblobmsg-json
-  TITLE:=OpenWrt process seccomp helper + utrace
+  TITLE:=BoluWrt process seccomp helper + utrace
 endef
 
 define Package/procd-nand
   SECTION:=utils
   CATEGORY:=Utilities
   DEPENDS:=@NAND_SUPPORT +ubi-utils
-  TITLE:=OpenWrt sysupgrade nand helper
+  TITLE:=BoluWrt sysupgrade nand helper
 endef
 
 define Package/procd-nand-firstboot
   SECTION:=utils
   CATEGORY:=Utilities
   DEPENDS:=procd-nand
-  TITLE:=OpenWrt firstboot nand helper
+  TITLE:=BoluWrt firstboot nand helper
 endef
 
 define Package/procd/config

@@ -1,4 +1,4 @@
-# QoS configuration for OpenWrt
+# QoS configuration for BoluWrt
 
 # INTERFACES:
 config interface wan

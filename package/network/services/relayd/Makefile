@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2011 OpenWrt.org
+# Copyright (C) 2010-2011 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=relayd
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
-PKG_SOURCE_URL=$(LEDE_GIT)/project/relayd.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/relayd.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_DATE:=2016-02-07
 PKG_SOURCE_VERSION:=ad0b25ad74345d367c62311e14b279f5ccb8ef13

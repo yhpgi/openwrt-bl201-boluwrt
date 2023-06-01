@@ -343,7 +343,7 @@ Signed-off-by: Daniel Schwierzeck <daniel.schwierzeck@gmail.com>
 +#include <asm/lantiq/config.h>
 +#include <asm/arch/config.h>
 +
-+/* Pull in default OpenWrt configs for Lantiq SoC */
++/* Pull in default BoluWrt configs for Lantiq SoC */
 +#include "openwrt-lantiq-common.h"
 +
 +#define CONFIG_ENV_UPDATE_UBOOT_SF					\

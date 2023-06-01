@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2006-2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -52,7 +52,7 @@ endef
 CAMBOZOLA:=cambozola-0.936.tar.gz
 
 # Distribution URL doesn't always have the correct version
-# Using the OpenWrt mirror provides a stable version
+# Using the BoluWrt mirror provides a stable version
 #      orig-URL:=http://www.andywilcock.com/code/cambozola
 define Download/cambozola
   URL:=http://mirror2.openwrt.org/sources

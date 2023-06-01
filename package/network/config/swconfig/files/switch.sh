@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2009 OpenWrt.org
+# Copyright (C) 2009 BoluWrt.org
 
 setup_switch_dev() {
 	local name

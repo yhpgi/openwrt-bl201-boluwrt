@@ -377,7 +377,7 @@
 /* for CONFIG_CMD_BOOTMENU & CONFIG_CMD_PXE */
 #define CONFIG_MENU
 
-/* for new FIT uImage format generated in OpenWrt */
+/* for new FIT uImage format generated in BoluWrt */
 #define CONFIG_FIT
 
 #endif	/* __CONFIG_H */

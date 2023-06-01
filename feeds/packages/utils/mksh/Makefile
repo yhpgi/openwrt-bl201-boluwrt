@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2007-2011 OpenWrt.org
+# Copyright (C) 2007-2011 BoluWrt.org
 # Copyright (c) 2009-2014 Thorsten Glaser <tg@mirbsd.org>
 #
 # This is free software, licensed under the GNU General Public License v2.

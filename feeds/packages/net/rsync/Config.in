@@ -18,7 +18,7 @@ if PACKAGE_rsync
 			this may create compatibility errors when using compression  with older
 			clients, or those using the current default of the bundled zlib.
 
-			rsync's upstream default is to use their bundled zlib. OpenWrt uses the
+			rsync's upstream default is to use their bundled zlib. BoluWrt uses the
 			system zlib for space reasons. The system zlib will eventually become 
 			default for upstream as well.
 		default y

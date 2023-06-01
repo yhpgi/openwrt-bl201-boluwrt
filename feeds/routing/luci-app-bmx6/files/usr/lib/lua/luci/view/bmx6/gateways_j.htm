@@ -7,7 +7,7 @@
 
 		document.getElementById('extra-info').innerHTML = document.getElementById(id).innerHTML;
 	}
-	XHR.poll(5, '/cgi-bin/bmx6-info', { 'descriptions/all': '' },
+	XHR.poll(5, '/boluwrt/bmx6-info', { 'descriptions/all': '' },
 		function(x, st)
 		{
 		  var tb = document.getElementById('descriptions_table');
@@ -46,7 +46,7 @@
 					if ( network_len >= 32 ) continue;
 
 					tr.className = 'cbi-section-table-row cbi-rowstyle-' + ((rowcount++ % 2) + 1);
-					tr.insertCell(-1).innerHTML = String.format('<a href="/cgi-bin/bmx6control?function=gwselect&amp;node=%s"><img src="%s" /></a>',nodename,tunicon);
+					tr.insertCell(-1).innerHTML = String.format('<a href="/boluwrt/bmx6control?function=gwselect&amp;node=%s"><img src="%s" /></a>',nodename,tunicon);
 					tr.insertCell(-1).innerHTML = nodename;
 					tr.insertCell(-1).innerHTML = network + '/' + network_len;
 					tr.insertCell(-1).innerHTML = network_bw;

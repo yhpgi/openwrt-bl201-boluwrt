@@ -1,7 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (c) 2014 OpenWrt.org
-
-. /lib/functions/network.sh
+# Copyright (c) 2014 BoluWrt.org
 
 START=80
 

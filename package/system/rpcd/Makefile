@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013-2016 OpenWrt.org
+# Copyright (C) 2013-2016 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -11,7 +11,7 @@ PKG_NAME:=rpcd
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/rpcd.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/rpcd.git
 PKG_SOURCE_DATE:=2016-12-03
 PKG_SOURCE_VERSION:=0577cfc1acdbaf30c31090e75045ba58d6dd8a78
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
@@ -33,7 +33,7 @@ endef
 define Package/rpcd/default
   SECTION:=utils
   CATEGORY:=Base system
-  TITLE:=OpenWrt ubus RPC backend server
+  TITLE:=BoluWrt ubus RPC backend server
   DEPENDS:=+libubus +libubox
 endef
 
@@ -50,6 +50,8 @@ endef
 define Package/rpcd/conffiles
 /etc/config/rpcd
 endef
+
+TARGET_LDFLAGS += -lcrypt
 
 define Package/rpcd/install
 	$(INSTALL_DIR) $(1)/etc/init.d

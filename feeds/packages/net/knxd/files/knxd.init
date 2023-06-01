@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2016 OpenWrt.org
+# Copyright (C) 2016 BoluWrt.org
 
 START=98
 STOP=20
@@ -40,7 +40,7 @@ start_service() {
 	append_parm args error "error" # "5"
 	append_parm args listen_tcp "listen-tcp" "6720"
 	append_bool args no_emisend_queuing "no-emisend-queuing" 0
-	append_parm args Name "Name" "OpenWrt"
+	append_parm args Name "Name" "BoluWrt"
 	append_bool args no_tunnel_client_queuing "no-tunnel-client-queuing" 0
 	append_bool args no_monitor "no-monitor" 0
 	append_bool args Routing "Routing" 0

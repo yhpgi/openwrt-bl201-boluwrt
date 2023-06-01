@@ -6,9 +6,9 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI Support for the OpenWrt MultiWAN agent (obsoleted by mwan3)
+LUCI_TITLE:=LuCI Support for the BoluWrt MultiWAN agent (obsoleted by mwan3)
 LUCI_DEPENDS:=+multiwan @BROKEN
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

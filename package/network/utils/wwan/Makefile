@@ -14,7 +14,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/wwan
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=Generic OpenWrt 3G/4G proto handler
+  TITLE:=Generic BoluWrt 3G/4G proto handler
 endef
 
 define Build/Compile

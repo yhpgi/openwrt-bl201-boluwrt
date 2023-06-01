@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2009-2016 OpenWrt.org
+# Copyright (C) 2009-2016 BoluWrt.org
 # Copyright (C) 2016 Luke McKee <hojuruku@gmail.com>
 # Procd init script reference: http://wiki.prplfoundation.org/wiki/Procd_reference
 

@@ -109,7 +109,7 @@ if has_pptp  then p:value("pptp",  "PPTP")  end
 
 function p.write(self, section, value)
 	-- Always set defaultroute to PPP and use remote dns
-	-- Overwrite a bad variable behaviour in OpenWrt
+	-- Overwrite a bad variable behaviour in BoluWrt
 	if value == "pptp" or value == "pppoe" then
 		self.map:set(section, "peerdns", "1")
 		self.map:set(section, "defaultroute", "1")

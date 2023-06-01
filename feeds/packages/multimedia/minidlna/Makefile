@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2014 OpenWrt.org
+# Copyright (C) 2010-2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=minidlna
 PKG_VERSION:=1.1.5
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=@SF/minidlna
@@ -18,6 +18,8 @@ PKG_LICENSE:=GPL-2.0 BSD-3-Clause
 PKG_LICENSE_FILES:=COPYING LICENCE.miniupnpd
 
 PKG_MAINTAINER:=Knyazkov Dmitry <medavedik@gmail.com>
+
+PKG_FIXUP:=autoreconf
 
 PKG_BUILD_PARALLEL:=0
 PKG_BUILD_DEPENDS:=util-linux
@@ -67,7 +69,7 @@ MAKE_FLAGS +=\
 CONFIGURE_ARGS +=\
 	--with-libiconv-prefix="$(ICONV_PREFIX)" \
 	--with-libintl-prefix="$(INTL_PREFIX)" \
-	--with-os-name="OpenWrt Linux" \
+	--with-os-name="BoluWrt Linux" \
 	--with-os-version="$(LINUX_VERSION)" \
 	--with-os-url="http://openwrt.org/" \
 	--with-db-path="/var/run/minidlna" \

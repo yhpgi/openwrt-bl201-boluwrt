@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-# Copyright (C) 2008-2017 OpenWrt.org
+# Copyright (C) 2008-2017 BoluWrt.org
 
 START=65
 
@@ -48,7 +48,7 @@ system_config() {
 
 	if [ "$cfgt" = "system" ]; then
 		config_get hostname "$cfg" hostname
-		hostname="${hostname:-OpenWrt}"
+		hostname="${hostname:-BoluWrt}"
 		SYSTEM_HOSTNAME="$hostname"
 	fi
 

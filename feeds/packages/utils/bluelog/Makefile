@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012-2013 OpenWrt.org
+# Copyright (C) 2012-2013 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -100,8 +100,8 @@ define Package/bluelog-live/install
 		$(PKG_INSTALL_DIR)/usr/share/bluelog/images/openwrt_logo.png \
 		$(PKG_INSTALL_DIR)/usr/share/bluelog/images/qrcontact.png \
 		$(1)/www/bluelog/images/
-	$(INSTALL_DIR) $(1)/www/cgi-bin
-	$(CP) $(PKG_INSTALL_DIR)/usr/share/bluelog/cgi-bin/* $(1)/www/cgi-bin/
+	$(INSTALL_DIR) $(1)/www/boluwrt
+	$(CP) $(PKG_INSTALL_DIR)/usr/share/bluelog/boluwrt/* $(1)/www/boluwrt/
 endef
 
 $(eval $(call BuildPackage,bluelog))

@@ -6,9 +6,9 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI OpenWrt.org theme
+LUCI_TITLE:=LuCI BoluWrt.org theme
 LUCI_DEPENDS:=
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

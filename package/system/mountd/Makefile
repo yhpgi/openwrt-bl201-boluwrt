@@ -1,4 +1,4 @@
-# Copyright (C) 2009-2012 OpenWrt.org
+# Copyright (C) 2009-2012 BoluWrt.org
 # All rights reserved.
 
 include $(TOPDIR)/rules.mk
@@ -7,7 +7,7 @@ PKG_NAME:=mountd
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(LEDE_GIT)/project/mountd.git
+PKG_SOURCE_URL=$(BoluWrt_GIT)/project/mountd.git
 PKG_SOURCE_DATE:=2016-12-19
 PKG_SOURCE_VERSION:=dd5799c9f8cc7a01c0572c067bf907b37cdd7d04
 PKG_MIRROR_HASH:=cdc9f61bf4ad4b5d02b7cad435de1566b53306ed532fe39d099ed91eec6c405c
@@ -22,7 +22,7 @@ include $(INCLUDE_DIR)/cmake.mk
 define Package/mountd
   SECTION:=utils
   CATEGORY:=Utilities
-  TITLE:=OpenWrt automount daemon
+  TITLE:=BoluWrt automount daemon
   DEPENDS:=+uci +kmod-fs-autofs4
   URL:=http://www.openwrt.org
 endef

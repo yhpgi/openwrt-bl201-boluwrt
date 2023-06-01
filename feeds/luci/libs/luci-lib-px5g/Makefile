@@ -13,4 +13,4 @@ PKG_USE_MIPS16:=0
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

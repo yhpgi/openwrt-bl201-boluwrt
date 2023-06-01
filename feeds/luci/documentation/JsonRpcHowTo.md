@@ -4,13 +4,13 @@ This Howto shows how to use it and provides information about available function
 
 # Basics
 LuCI comes with an efficient JSON De-/Encoder together with a JSON-RPC-Server which implements the *JSON-RPC 1.0_' and 2.0 (partly) specifications. The LuCI JSON-RPC server offers several independent APIs. Therefore you have to use '_different URLs for every exported library*.
-Assuming your LuCI-Installation can be reached through */cgi-bin/luci_' any exported library can be reached via '''/cgi-bin/luci/rpc/''LIBRARY_*.
+Assuming your LuCI-Installation can be reached through */boluwrt/bolu_' any exported library can be reached via '''/boluwrt/bolu/rpc/''LIBRARY_*.
 
 
 # Authentication
-Most exported libraries will require a valid authentication to be called with. If you get an *HTTP 403 Forbidden_' status code you are probably missing a valid authentication token. To get such a token you have to call the function '''login''' of the RPC-Library '''auth'''. Following our example from above this login function would be provided at '_/cgi-bin/luci/rpc/auth*. The function accepts 2 parameters: username and password (of a valid user account on the host system) and returns an authentication token.
+Most exported libraries will require a valid authentication to be called with. If you get an *HTTP 403 Forbidden_' status code you are probably missing a valid authentication token. To get such a token you have to call the function '''login''' of the RPC-Library '''auth'''. Following our example from above this login function would be provided at '_/boluwrt/bolu/rpc/auth*. The function accepts 2 parameters: username and password (of a valid user account on the host system) and returns an authentication token.
 
-If you want to call any exported library which requires an authentication token you have to *append it as an URL parameter _auth''''' to the RPC-Server URL. So instead of calling '''/cgi-bin/luci/rpc/''LIBRARY''''' you have to call '''/cgi-bin/luci/rpc/''LIBRARY''?auth=''TOKEN_*.
+If you want to call any exported library which requires an authentication token you have to *append it as an URL parameter _auth''''' to the RPC-Server URL. So instead of calling '''/boluwrt/bolu/rpc/''LIBRARY''''' you have to call '''/boluwrt/bolu/rpc/''LIBRARY''?auth=''TOKEN_*.
 
 If your JSON-RPC client is Cookie-aware (like most browsers are) you will receive the authentication token also with a session cookie and probably don't have to append it to the RPC-Server URL.
 

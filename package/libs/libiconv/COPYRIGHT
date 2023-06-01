@@ -10,7 +10,7 @@ modules may fall in this category as well. If you believe that a file
 is so trivial that it should be in the Public Domain, please contact
 me and, if I agree, I will explicitly release it from copyright.
 
-Some code has been modified by the OpenWrt project, this includes
+Some code has been modified by the BoluWrt project, this includes
 the conversion from char map files to C arrays and the iconv.h header
 file in particular.
 

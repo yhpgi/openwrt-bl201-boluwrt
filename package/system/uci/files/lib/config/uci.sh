@@ -1,7 +1,7 @@
 #!/bin/sh
 # Shell script compatibility wrappers for /sbin/uci
 #
-# Copyright (C) 2008-2010  OpenWrt.org
+# Copyright (C) 2008-2010  BoluWrt.org
 # Copyright (C) 2008  Felix Fietkau <nbd@nbd.name>
 #
 # This program is free software; you can redistribute it and/or modify

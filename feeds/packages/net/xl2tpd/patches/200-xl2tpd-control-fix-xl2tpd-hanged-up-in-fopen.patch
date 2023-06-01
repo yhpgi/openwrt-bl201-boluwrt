@@ -4,7 +4,7 @@ Date: Thu, 9 Feb 2017 17:32:14 +0800
 Subject: [PATCH] xl2tpd-control: fix xl2tpd hanged up in "fopen"
 
 This is a fix for xl2tpd hanged up in "fopen" result fifo while working
-on xl2tpd with OpenWrt.
+on xl2tpd with BoluWrt.
 
 Root cause is as followings,
 1. xl2tpd-control open result fifo    ##fifo readers=1

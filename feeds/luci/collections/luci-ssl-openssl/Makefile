@@ -18,4 +18,4 @@ LUCI_DEPENDS:=+luci +libustream-openssl +openssl-util
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

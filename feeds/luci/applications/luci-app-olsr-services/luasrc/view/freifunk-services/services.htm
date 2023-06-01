@@ -135,7 +135,7 @@ end
 					'<tr class="cbi-section-table-row cbi-rowstyle-'+(1 + (idx % 2))+'">' +
 						'<td class="cbi-section-table-titles"><a href="%s">%s</a></td>' +
 						'<td class="cbi-section-table-titles">%s</td>' +
-						'<td class="cbi-section-table-titles"><a href="http://%s/cgi-bin-status.html">%s</a></td>' +
+						'<td class="cbi-section-table-titles"><a href="http://%s/boluwrt-status.html">%s</a></td>' +
 					'</tr>',
 					service.url, service.descr, service.proto, service.origin_link, service.origin || '?'
 					);
@@ -181,7 +181,7 @@ end
 			<tr class="cbi-section-table-row cbi-rowstyle-<%=i%>">
 				<td class="cbi-section-table-titles"><a href="<%=url%>"><%=descr%></a></td>
 				<td class="cbi-section-table-titles"><%=proto%></td>
-				<td class="cbi-section-table-titles"><a href="http://<%=origin_link%>/cgi-bin-status.html"><%=origin%></a></td>
+				<td class="cbi-section-table-titles"><a href="http://<%=origin_link%>/boluwrt-status.html"><%=origin%></a></td>
 			</tr>
 			<% i = ((i % 2) + 1)
 		end %>

@@ -72,6 +72,8 @@ ramips_setup_interfaces()
 	3g-6200n|\
 	ac1200pro|\
 	ai-br100|\
+	bolt-bl201|\
+	d240|\
 	db-wrt01|\
 	dir-300-b7|\
 	dir-320-b1|\
@@ -105,7 +107,6 @@ ramips_setup_interfaces()
 	zbt-we826|\
 	zbt-wg2626|\
 	zbt-wg3526|\
-	bolt-bl201|\
 	zbt-wr8305rt)
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
@@ -125,7 +126,6 @@ ramips_setup_interfaces()
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "5@eth0"
 		;;
 	asl26555|\
-	re6500|\
 	rp-n53)
 		ucidef_add_switch "switch0" \
 			"1:lan" "2:lan" "3:lan" "4:lan" "6t@eth0"
@@ -134,9 +134,7 @@ ramips_setup_interfaces()
 	awm002-evb|\
 	awm003-evb|\
 	c20i|\
-	c50|\
 	dir-645|\
-	dir-860l-b1|\
 	f5d8235-v2|\
 	gl-mt300a|\
 	gl-mt300n|\
@@ -194,8 +192,17 @@ ramips_setup_interfaces()
 	pbr-d1|\
 	wli-tx4-ag300n|\
 	wmr-300|\
+	wn3000rpv3|\
 	wrh-300cr)
 		ucidef_set_interface_lan "eth0"
+		;;
+	c50)
+		ucidef_add_switch "switch0" \
+			"1:lan:3" "2:lan:4" "3:lan:1" "4:lan:2" "0:wan" "6@eth0"
+		;;
+	dir-860l-b1)
+		ucidef_add_switch "switch0" \
+			"1:lan:4" "2:lan:3" "3:lan:2" "4:lan:1" "0:wan" "6@eth0"
 		;;
 	duzun-dm06)
 		ucidef_add_switch "switch0" \
@@ -213,7 +220,7 @@ ramips_setup_interfaces()
 		;;
 	kn_rc|\
 	kn_rf)
-		ucidef_add_switch "switch" \
+		ucidef_add_switch "switch0" \
 			"0:wan" "1:lan" "2:lan" "3:lan" "4:lan" "6@eth0"
 		;;
 	kng_rc)
@@ -238,6 +245,10 @@ ramips_setup_interfaces()
 	newifi-d1)
 		ucidef_add_switch "switch0" \
 		"1:lan:2" "2:lan:1" "4:wan" "6@eth0"
+		;;
+	re6500)
+		ucidef_add_switch "switch0" \
+			"0:lan:1" "1:lan:2" "2:lan:3" "3:lan:4" "6@eth0"
 		;;
 	rt-n56u)
 		ucidef_add_switch "switch0" \
@@ -343,8 +354,10 @@ ramips_setup_macs()
 		[ -n "$lan_mac" ] || lan_mac=$(cat /sys/class/net/eth0/address)
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		;;
+	kn_rc|\
+	kn_rf|\
 	kng_rc)
-		wan_mac=$(mtd_get_mac_binary factory 28)
+		wan_mac=$(mtd_get_mac_binary factory 40)
 		;;
 	linkits7688 | \
 	linkits7688d)
@@ -354,6 +367,10 @@ ramips_setup_macs()
 	mac1200rv2)
 		lan_mac=$(mtd_get_mac_binary factory_info 13)
 		wan_mac=$(macaddr_add "$lan_mac" 1)
+		;;
+	miwifi-mini)
+		wan_mac=$(cat /sys/class/net/eth0/address)
+		lan_mac=$(macaddr_setbit_la "$wan_mac")
 		;;
 	m3|\
 	m4|\

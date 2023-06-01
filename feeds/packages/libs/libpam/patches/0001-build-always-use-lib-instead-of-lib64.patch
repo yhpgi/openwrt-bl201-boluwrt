@@ -3,7 +3,7 @@ From: Yousong Zhou <yszhou4tech@gmail.com>
 Date: Wed, 17 Jun 2015 16:11:31 +0800
 Subject: [PATCH 1/7] build: always use /lib instead of /lib64.
 
-* configure.ac: OpenWrt does not use /lib64.
+* configure.ac: BoluWrt does not use /lib64.
 
 Signed-off-by: Yousong Zhou <yszhou4tech@gmail.com>
 ---

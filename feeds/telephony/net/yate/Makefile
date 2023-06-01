@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2014 OpenWrt.org
+# Copyright (C) 2006-2014 BoluWrt.org
 # Copyright (C) 2006-2011 SMBPhone
 #
 # This is free software, licensed under the GNU General Public License v2.

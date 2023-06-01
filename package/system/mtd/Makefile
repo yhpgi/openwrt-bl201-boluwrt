@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2012 OpenWrt.org
+# Copyright (C) 2006-2012 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -28,7 +28,7 @@ endef
 
 define Package/mtd/description
  This package contains an utility useful to upgrade from other firmware or 
- older OpenWrt releases.
+ older BoluWrt releases.
 endef
 
 target=$(firstword $(subst -, ,$(BOARD)))

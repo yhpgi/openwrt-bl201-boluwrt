@@ -2,7 +2,7 @@
  * NVRAM variable manipulation (common)
  *
  * Copyright 2004, Broadcom Corporation
- * Copyright 2009-2010, OpenWrt.org
+ * Copyright 2009-2010, BoluWrt.org
  * All Rights Reserved.
  *
  * THIS SOFTWARE IS OFFERED "AS IS", AND BROADCOM GRANTS NO WARRANTIES OF ANY

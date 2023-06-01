@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2010-2014 OpenWrt.org
+# Copyright (C) 2010-2014 BoluWrt.org
 # Copyright (C) 2010 segal.di.ubi.pt
 # Copyright (C) 2016 Karol Babioch <karol@babioch.de>
 #

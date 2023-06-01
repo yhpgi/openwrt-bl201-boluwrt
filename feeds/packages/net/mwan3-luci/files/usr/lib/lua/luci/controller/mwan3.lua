@@ -234,9 +234,9 @@ function troubleshootingData()
 	-- software versions
 	local wrtRelease = ut.trim(ver.distversion)
 		if wrtRelease ~= "" then
-			wrtRelease = "OpenWrt - " .. wrtRelease
+			wrtRelease = "BoluWrt - " .. wrtRelease
 		else
-			wrtRelease = "OpenWrt - unknown"
+			wrtRelease = "BoluWrt - unknown"
 		end
 	local luciRelease = ut.trim(ver.luciversion)
 		if luciRelease ~= "" then

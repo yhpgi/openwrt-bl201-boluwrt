@@ -13,4 +13,4 @@ PKG_MAINTAINER:=Roger Pueyo Centelles <roger.pueyo@guifi.net>
 
 include ../../luci.mk
 
-# call BuildPackage - OpenWrt buildroot signature
+# call BuildPackage - BoluWrt buildroot signature

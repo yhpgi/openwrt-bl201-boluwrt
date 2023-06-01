@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 2014 OpenWrt.org
+# Copyright (C) 2014 BoluWrt.org
 
 nand_takeover() {
 	. /lib/upgrade/nand.sh

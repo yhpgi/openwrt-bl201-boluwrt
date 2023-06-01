@@ -4,7 +4,7 @@ Date: Sun, 8 Jan 2017 19:24:26 +0100
 Subject: [PATCH 3/3] src: move OCClientResponse from stack to heap
 
 OCClientResponse is about 50KByte and should not be stored on the
-stack. On LEDE with MIPS, musl libc this causes a segmentation fault.
+stack. On BoluWrt with MIPS, musl libc this causes a segmentation fault.
 Moving this structure to the heap is the simple solution for this
 problem, but this structure should be shrinked.
 

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2014 OpenWrt.org
+# Copyright (C) 2006-2014 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -29,7 +29,7 @@ define Package/dovecot
   CATEGORY:=Mail
   DEPENDS:=+DOVECOT_LDAP:libopenldap +libopenssl +librt +zlib +libbz2 +libcap
   TITLE:=An IMAP and POP3 daemon
-  MAINTAINER:=Peter Wagner <tripolar@gmx.at>
+  MAINTAINER:=Lucian Cristian <lucian.cristian@gmail.com>
   URL:=http://www.dovecot.org/
   USERID:=dovecot=59:dovecot=59
 endef
@@ -55,7 +55,8 @@ CONFIGURE_ARGS += \
 	--with-moduledir=/usr/lib/dovecot/modules \
 	--with-notify=dnotify \
 	--without-lzma \
-	--without-lz4
+	--without-lz4 \
+	--with-icu=no
 
 ifneq ($(strip $(CONFIG_DOVECOT_LDAP)),)
   CONFIGURE_ARGS+= \

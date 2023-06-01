@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008 OpenWrt.org
+# Copyright (C) 2008 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -21,7 +21,7 @@ include $(INCLUDE_DIR)/package.mk
 
 TARGET_LANGUAGES:="c,c++"
 BUGURL=https://dev.openwrt.org/
-PKGVERSION=OpenWrt GCC $(PKG_VERSION)
+PKGVERSION=BoluWrt GCC $(PKG_VERSION)
 
 # not using sstrip here as this fucks up the .so's somehow
 STRIP:=$(TOOLCHAIN_DIR)/bin/$(TARGET_CROSS)strip

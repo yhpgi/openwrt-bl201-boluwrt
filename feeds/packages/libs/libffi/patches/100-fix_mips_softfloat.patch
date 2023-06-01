@@ -3,7 +3,7 @@ From: Yousong Zhou <yszhou4tech@gmail.com>
 Date: Mon, 15 Aug 2016 15:00:13 +0800
 Subject: [PATCH] mips: fix MIPS softfloat build issue
 
-The patch for o32.S is taken from OpenWrt packages repo 3a7a4bf "libffi:
+The patch for o32.S is taken from BoluWrt packages repo 3a7a4bf "libffi:
 fix MIPS softfloat build issue with current binutils"
 
 Signed-off-by: Felix Fietkau <nbd@openwrt.org>

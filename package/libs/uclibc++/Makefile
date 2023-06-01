@@ -1,6 +1,6 @@
 #
-# Copyright (C) 2006-2012 OpenWrt.org
-# Copyright (c) 2016 LEDE project
+# Copyright (C) 2006-2012 BoluWrt.org
+# Copyright (c) 2016 BoluWrt project
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.

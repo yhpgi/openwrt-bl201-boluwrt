@@ -72,7 +72,7 @@ end
 o = s:taboption("general", Value, "friendly_name", translate("Friendly name:"),
 	translate("Set this if you want to customize the name that shows up on your clients."))
 o.rmempty = true
-o.placeholder = "OpenWrt DLNA Server"
+o.placeholder = "BoluWrt DLNA Server"
 
 o = s:taboption("advanced", Value, "db_dir", translate("Database directory:"),
 	translate("Set this if you would like to specify the directory where you want MiniDLNA to store its database and album art cache."))

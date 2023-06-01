@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 OpenWrt.org
+# Copyright (C) 2015 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -35,10 +35,10 @@ define Build/Prepare
 endef
 
 define Package/cgi-io/install
-	$(INSTALL_DIR) $(1)/usr/libexec $(1)/www/cgi-bin/
+	$(INSTALL_DIR) $(1)/usr/libexec $(1)/www/boluwrt/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/cgi-io $(1)/usr/libexec
-	$(LN) ../../usr/libexec/cgi-io $(1)/www/cgi-bin/cgi-upload 
-	$(LN) ../../usr/libexec/cgi-io $(1)/www/cgi-bin/cgi-download 
+	$(LN) ../../usr/libexec/cgi-io $(1)/www/boluwrt/cgi-upload 
+	$(LN) ../../usr/libexec/cgi-io $(1)/www/boluwrt/cgi-download 
 endef
 
 $(eval $(call BuildPackage,cgi-io))

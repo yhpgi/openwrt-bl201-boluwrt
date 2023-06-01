@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2013 OpenWrt.org
+# Copyright (C) 2006-2013 BoluWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -48,9 +48,12 @@ TARGET_CFLAGS += \
 
 CONFIGURE_VARS += \
 	ac_cv_linux_vers=$(LINUX_VERSION) \
-	ac_cv_header_libusb_1_0_libusb_h=no \
-	ac_cv_netfilter_can_compile=no
+	ac_cv_header_libusb_1_0_libusb_h=no
 
+ifeq ($(CONFIG_PCAP_HAS_NETFILTER),)
+CONFIGURE_VARS += \
+	ac_cv_netfilter_can_compile=no
+endif
 
 CONFIGURE_ARGS += \
 	--enable-shared \
