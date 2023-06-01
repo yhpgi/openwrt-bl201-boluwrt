@@ -605,3 +605,27 @@ define KernelPackage/crypto-xts
 endef
 
 $(eval $(call KernelPackage,crypto-xts))
+
+define KernelPackage/crypto-core
+  SUBMENU:=$(CRYPTO_MENU)
+  TITLE:=Core CryptoAPI modules
+  KCONFIG:= \
+  CONFIG_CRYPTO=y \
+  CONFIG_CRYPTO_HW=y \
+  CONFIG_CRYPTO_BLKCIPHER \
+  CONFIG_CRYPTO_ALGAPI \
+  $(foreach mod,$(CRYPTO_MODULES),$(call crypto_confvar,$(mod)))
+  FILES:=$(foreach mod,$(CRYPTO_MODULES),$(call crypto_file,$(mod)))
+endef
+
+$(eval $(call KernelPackage,crypto-core))
+
+define KernelPackage/crypto-arc4
+  TITLE:=ARC4 (RC4) cipher CryptoAPI module
+  KCONFIG:=CONFIG_CRYPTO_ARC4
+  FILES:=$(LINUX_DIR)/crypto/arc4.ko
+  AUTOLOAD:=$(call AutoLoad,09,arc4)
+  $(call AddDepends/crypto)
+endef
+
+$(eval $(call KernelPackage,crypto-arc4))

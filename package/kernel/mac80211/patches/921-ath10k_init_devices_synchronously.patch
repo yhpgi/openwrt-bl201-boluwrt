@@ -2,7 +2,7 @@ From: Sven Eckelmann <sven@open-mesh.com>
 Date: Tue, 18 Nov 2014 12:29:28 +0100
 Subject: [PATCH] ath10k: Don't initialize devices asynchronously
 
-BoluWrt requires all PHYs to be initialized to create the configuration files
+OpenWrt requires all PHYs to be initialized to create the configuration files
 during bootup. ath10k violates this because it delays the creation of the PHY
 to a not well defined point in the future.
 
@@ -14,11 +14,11 @@ Signed-off-by: Sven Eckelmann <sven@open-mesh.com>
 
 --- a/drivers/net/wireless/ath/ath10k/core.c
 +++ b/drivers/net/wireless/ath/ath10k/core.c
-@@ -2220,6 +2220,16 @@ int ath10k_core_register(struct ath10k *
+@@ -1914,6 +1914,16 @@ int ath10k_core_register(struct ath10k *
  	ar->chip_id = chip_id;
  	queue_work(ar->workqueue, &ar->register_work);
  
-+	/* BoluWrt requires all PHYs to be initialized to create the
++	/* OpenWrt requires all PHYs to be initialized to create the
 +	 * configuration files during bootup. ath10k violates this
 +	 * because it delays the creation of the PHY to a not well defined
 +	 * point in the future.
