@@ -19,7 +19,7 @@ define Package/default-settings
   CATEGORY:=LuCI
   TITLE:=LuCI support for Default Settings
   PKGARCH:=all
-  DEPENDS:=+luci-base +luci
+  DEPENDS:=+luci-base +luci +luci-app-vnstat +luci-proto-wireguard 
 endef
 
 define Package/default-settings/description
