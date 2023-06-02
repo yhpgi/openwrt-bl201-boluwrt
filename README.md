@@ -19,7 +19,9 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
   #### [BoluWrt v4.3](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3) | Terbaru
   
-  - Changelog dan info selengkapnya mengenai build ini, silakan baca [disini](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3).
+  ```
+    - REDACTED
+  ```
   
   #### [BoluWrt v3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1)
 

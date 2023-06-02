@@ -4,7 +4,7 @@ Subject: [PATCH] mac80211: parse VHT info in injected frames
 
 Add VHT radiotap parsing support to ieee80211_parse_tx_radiotap().
 That capability has been tested using a d-link dir-860l rev b1 running
-OpenWrt trunk and mt76 driver
+BoluWrt trunk and mt76 driver
 
 Signed-off-by: Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
 ---
