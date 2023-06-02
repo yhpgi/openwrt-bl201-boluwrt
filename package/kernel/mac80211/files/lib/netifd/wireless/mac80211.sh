@@ -23,6 +23,7 @@ drv_mac80211_init_device_config() {
 	config_add_int rxantenna txantenna antenna_gain txpower distance
 	config_add_boolean noscan ht_coex
 	config_add_array ht_capab
+	config_add_array channels
 	config_add_boolean \
 		rxldpc \
 		short_gi_80 \
@@ -89,6 +90,7 @@ mac80211_hostapd_setup_base() {
 	json_select config
 
 	[ "$auto_channel" -gt 0 ] && channel=acs_survey
+	[ "$auto_channel" -gt 0 ] && json_get_values channel_list channels
 
 	json_get_vars noscan ht_coex
 	json_get_values ht_capab_list ht_capab
@@ -218,7 +220,6 @@ mac80211_hostapd_setup_base() {
 			vht_max_a_mpdu_len_exp:7 \
 			vht_max_mpdu:11454 \
 			rx_stbc:4 \
-			tx_stbc:4 \
 			vht_link_adapt:3 \
 			vht160:2
 
@@ -230,13 +231,13 @@ mac80211_hostapd_setup_base() {
 
 		cap_rx_stbc=$((($vht_cap >> 8) & 7))
 		[ "$rx_stbc" -lt "$cap_rx_stbc" ] && cap_rx_stbc="$rx_stbc"
-		ht_cap_mask="$(( ($vht_cap & ~(0x700)) | ($cap_rx_stbc << 8) ))"
+		vht_cap="$(( ($vht_cap & ~(0x700)) | ($cap_rx_stbc << 8) ))"
 
 		mac80211_add_capabilities vht_capab $vht_cap \
 			RXLDPC:0x10::$rxldpc \
 			SHORT-GI-80:0x20::$short_gi_80 \
 			SHORT-GI-160:0x40::$short_gi_160 \
-			TX-STBC-2BY1:0x80::$tx_stbc \
+			TX-STBC-2BY1:0x80::$tx_stbc_2by1 \
 			SU-BEAMFORMER:0x800::$su_beamformer \
 			SU-BEAMFORMEE:0x1000::$su_beamformee \
 			MU-BEAMFORMER:0x80000::$mu_beamformer \
@@ -245,10 +246,10 @@ mac80211_hostapd_setup_base() {
 			HTC-VHT:0x400000::$htc_vht \
 			RX-ANTENNA-PATTERN:0x10000000::$rx_antenna_pattern \
 			TX-ANTENNA-PATTERN:0x20000000::$tx_antenna_pattern \
-			RX-STBC1:0x700:0x100:1 \
-			RX-STBC12:0x700:0x200:1 \
-			RX-STBC123:0x700:0x300:1 \
-			RX-STBC1234:0x700:0x400:1 \
+			RX-STBC-1:0x700:0x100:1 \
+			RX-STBC-12:0x700:0x200:1 \
+			RX-STBC-123:0x700:0x300:1 \
+			RX-STBC-1234:0x700:0x400:1 \
 
 		# supported Channel widths
 		vht160_hw=0
@@ -267,7 +268,7 @@ mac80211_hostapd_setup_base() {
 			vht_max_mpdu_hw=11454
 		[ "$vht_max_mpdu_hw" != 3895 ] && \
 			vht_capab="$vht_capab[MAX-MPDU-$vht_max_mpdu_hw]"
-			
+
 		# maximum A-MPDU length exponent
 		vht_max_a_mpdu_len_exp_hw=0
 		[ "$(($vht_cap & 58720256))" -ge 8388608 -a 1 -le "$vht_max_a_mpdu_len_exp" ] && \
@@ -301,6 +302,7 @@ mac80211_hostapd_setup_base() {
 	hostapd_prepare_device_config "$hostapd_conf_file" nl80211
 	cat >> "$hostapd_conf_file" <<EOF
 ${channel:+channel=$channel}
+${channel_list:+chanlist=$channel_list}
 ${noscan:+noscan=$noscan}
 $base_cfg
 
@@ -391,11 +393,10 @@ mac80211_generate_mac() {
 find_phy() {
 	[ -n "$phy" -a -d /sys/class/ieee80211/$phy ] && return 0
 	[ -n "$path" ] && {
-		for phy in /sys/devices/$path/ieee80211/phy*; do
-			[ -e "$phy" ] && {
-				phy="${phy##*/}"
-				return 0
-			}
+		for phy in $(ls /sys/class/ieee80211 2>/dev/null); do
+			case "$(readlink -f /sys/class/ieee80211/$phy/device)" in
+				*$path) return 0;;
+			esac
 		done
 	}
 	[ -n "$macaddr" ] && {
@@ -481,7 +482,7 @@ mac80211_prepare_vif() {
 		# All interfaces must have unique mac addresses
 		# which can either be explicitly set in the device
 		# section, or automatically generated
-		ifconfig "$ifname" hw ether "$macaddr"
+		ip link set dev "$ifname" address "$macaddr"
 	fi
 
 	json_select ..
@@ -496,7 +497,7 @@ mac80211_setup_supplicant() {
 mac80211_setup_adhoc_htmode() {
 	case "$htmode" in
 		VHT20|HT20) ibss_htmode=HT20;;
-		HT40*|VHT40|VHT80|VHT160)
+		HT40*|VHT40|VHT160)
 			case "$hwmode" in
 				a)
 					case "$(( ($channel / 4) % 2 ))" in
@@ -519,6 +520,9 @@ mac80211_setup_adhoc_htmode() {
 				;;
 			esac
 			[ "$auto_channel" -gt 0 ] && ibss_htmode="HT40+"
+		;;
+		VHT80)
+			ibss_htmode="80MHZ"
 		;;
 		NONE|NOHT)
 			ibss_htmode="NOHT"
@@ -562,7 +566,7 @@ mac80211_setup_adhoc() {
 	[ -n "$mcast_rate" ] && wpa_supplicant_add_rate mcval "$mcast_rate"
 
 	iw dev "$ifname" ibss join "$ssid" $freq $ibss_htmode fixed-freq $bssid \
-		${beacon_int:+beacon-interval $beacon_int} \
+		beacon-interval $beacon_int \
 		${brstr:+basic-rates $brstr} \
 		${mcval:+mcast-rate $mcval} \
 		${keyspec:+keys $keyspec}
@@ -580,7 +584,7 @@ mac80211_setup_vif() {
 	json_get_vars mode
 	json_get_var vif_txpower txpower
 
-	ifconfig "$ifname" up || {
+	ip link set dev "$ifname" up || {
 		wireless_setup_vif_failed IFUP_ERROR
 		json_select ..
 		return
@@ -607,7 +611,44 @@ mac80211_setup_vif() {
 				mcval=
 				[ -n "$mcast_rate" ] && wpa_supplicant_add_rate mcval "$mcast_rate"
 
-				iw dev "$ifname" mesh join "$mesh_id" ${mcval:+mcast-rate $mcval}
+				case "$htmode" in
+					VHT20|HT20) mesh_htmode=HT20;;
+					HT40*|VHT40)
+						case "$hwmode" in
+							a)
+								case "$(( ($channel / 4) % 2 ))" in
+									1) mesh_htmode="HT40+" ;;
+									0) mesh_htmode="HT40-";;
+								esac
+							;;
+							*)
+								case "$htmode" in
+									HT40+) mesh_htmode="HT40+";;
+									HT40-) mesh_htmode="HT40-";;
+									*)
+										if [ "$channel" -lt 7 ]; then
+											mesh_htmode="HT40+"
+										else
+											mesh_htmode="HT40-"
+										fi
+									;;
+								esac
+							;;
+						esac
+					;;
+					VHT80)
+						mesh_htmode="80Mhz"
+					;;
+					VHT160)
+						mesh_htmode="160Mhz"
+					;;
+					*) mesh_htmode="NOHT" ;;
+				esac
+
+				freq="$(get_freq "$phy" "$channel")"
+				iw dev "$ifname" mesh join "$mesh_id" freq $freq $mesh_htmode \
+					${mcval:+mcast-rate $mcval} \
+					beacon-interval $beacon_int
 			fi
 
 			for var in $MP_CONFIG_INT $MP_CONFIG_BOOL $MP_CONFIG_STRING; do
@@ -643,7 +684,7 @@ mac80211_interface_cleanup() {
 	local phy="$1"
 
 	for wdev in $(list_phy_interfaces "$phy"); do
-		ifconfig "$wdev" down 2>/dev/null
+		ip link set dev "$wdev" down 2>/dev/null
 		iw dev "$wdev" del
 	done
 }
@@ -659,7 +700,7 @@ drv_mac80211_setup() {
 		country chanbw distance \
 		txpower antenna_gain \
 		rxantenna txantenna \
-		frag rts beacon_int htmode
+		frag rts beacon_int:100 htmode
 	json_get_values basic_rate_list basic_rate
 	json_select ..
 
@@ -717,7 +758,7 @@ drv_mac80211_setup() {
 	for_each_interface "ap" mac80211_prepare_vif
 
 	[ -n "$hostapd_ctrl" ] && {
-		/usr/sbin/hostapd -P /var/run/wifi-$phy.pid -B "$hostapd_conf_file"
+		/usr/sbin/hostapd -s -P /var/run/wifi-$phy.pid -B "$hostapd_conf_file"
 		ret="$?"
 		wireless_add_process "$(cat /var/run/wifi-$phy.pid)" "/usr/sbin/hostapd" 1
 		[ "$ret" != 0 ] && {

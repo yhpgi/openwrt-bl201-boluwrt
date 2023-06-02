@@ -5,7 +5,7 @@ MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
-This is needed by BoluWrt which expects all PHYs to be created after
+This is needed by OpenWrt which expects all PHYs to be created after
 module loads successfully.
 
 Signed-off-by: Rafał Miłecki <zajec5@gmail.com>
