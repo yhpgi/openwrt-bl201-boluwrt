@@ -17,13 +17,22 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ## Changelog :
 
-  #### [BoluWrt v4.3](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3) | Terbaru
+  #### [BoluWrt v5.8](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v5.8) - 03 Juni 2023
+
+    1. Kernel 4.4.92;
+    2. Porting Luci ke Master branch;
+    3. Porting Wifi driver dari chaos-calmer;
+    4. Source opkg dipindah, semua aksi penginstalan dapat dilakukan, e.g: kmod, dll; 
+    5. Bisa sysupgrade / tanpa harus full install.
+    6. Default password: bolu
+
+  #### [BoluWrt v4.3](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v4.3) - 28 Mei 2023
   
-  ```
-    - REDACTED
+  ```diff
+  - REDACTED
   ```
   
-  #### [BoluWrt v3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1)
+  #### [BoluWrt v3.1](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/3.1) - 25 Mei 2023
 
     1. Didasarkan pada LEDE 17 / Custom compile untuk Bolt-BL201
     2. Menggunakan bolu-theme sebagai tema default
@@ -34,7 +43,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
     7. Tombol reset berfungsi
     8. Tombol WPS sengaja dimatikan
 
-  #### [BoluWrt v2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC)
+  #### [BoluWrt v2.2](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/BOLUWRT-CC) - 13 Mei 2023
 
     Based on Chaos-calmer 15.05.1 / Custom compile untuk Bolt-BL201
     
@@ -59,7 +68,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   - [Install Breed-web](https://github.com/yHpgi/openwrt-bl201-boluwrt/blob/main/INSTALL-BREED.md)
   - Nyalakan Router sambil menekan tombol reset.
   - Masuk ke halaman Breed-web. Alamat IP Breed-web adalah `192.168.1.1`.
-  - Masuk ke menu upgrade, tab factory install, lalu masukkan file factory.
+  - Masuk ke menu upgrade, masukkan file 'sysupgrade' pada kolom firmware.
   - Klik mulai. konfirmasi penginstalan dan tunggu proses flashing berjalan hingga selesai.
 
 #### 2. Menggunakan Openwrt sysupgrade
@@ -81,7 +90,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
     d. ketikkan perintah berikut :
   
       ```
-      sysupgrade -v -F -n /tmp/[filename.bin]
+      sysupgrade -v -F -n /tmp/[nama-file.bin]
       ```
   
     e. tekan Enter. dan tunggu proses flashing hingga selesai.
@@ -91,14 +100,23 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   - Melalui menu upgrade di Openwrt
 
 ## Lain-lain :
-
   ```
-  Password login     : (kosong)
-  Password WiFi      : (kosong)
-  Default IP         : 192.168.1.1
+  Password login        : tidak ada
+  Password login v5.8   : bolu
+  Password WiFi         : tidak ada
+  Default IP            : 192.168.1.1
   ```
 
-#### *Openwrt sepenuhnya opensource, tapi jika berkenan, Anda bisa mendukung saya melalui sociabuzz.*
 
 
-<a href="https://sociabuzz.com/yhpgi/tribe"><img style="width: 200px" src="dump/sociabuzz.png" alt="sociabuzz"/></a>
+
+<div align="center">
+
+### *BoluWrt dan/atau Openwrt sepenuhnya opensource, tapi jika berkenan, Anda bisa mendukung saya melalui sociabuzz.*
+
+
+
+
+<a href="https://sociabuzz.com/yhpgi/tribe"><img style="width: 150px" src="dump/sociabuzz.png" alt="sociabuzz"/></a>
+
+</div>
