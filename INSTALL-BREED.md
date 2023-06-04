@@ -1,44 +1,67 @@
-# Berikut adalah langkah-langkah menginstall Breed-web
+<div align=center>
+<h1>Berikut adalah langkah-langkah menginstall Breed-web</h1>
+</div>
+
+## 1. Cara Manual
+
+<dl>
+<dd>
 
 ### 1. Persiapan
 
-* Unduh Breed-web [disini](https://breed.hackpascal.net/). gunakan versi breed-mt7620-reset26.bin.
-* Unduh program untuk telnet. bisa menggunakan [putty](https://www.putty.org/).
+* Unduh Breed-web [disini](https://breed.hackpascal.net/). Gunakan versi `breed-mt7620-reset26.bin` atau ambil [disini](dump/breed-mt7620-reset26.bin);
+* Unduh program untuk telnet. bisa menggunakan [putty](https://www.putty.org/) atau windows terminal.
 
+### 2. Mengaktikan Telnet
 
-### 2. Mendapatkan akses telnet
-
-* Lakukan backup konfigurasi, kemudian ekstrak.
-* Edit 2860.dat menggunakan text editor.
-* Cari MGMT_TELNET_WAN dan MGMT_TELNET_LAN.
-* Ubah nilainya menjadi 1.
-* Arsipkan kembali, lalu restore menggunakan konfigurasi ini.
-* Reboot router
+* Lakukan backup konfigurasi;
+* Edit 2860.dat menggunakan text editor. pastikan text editor mendukung file binary;
+* Cari MGMT_TELNET_WAN dan MGMT_TELNET_LAN;
+* Ubah nilainya menjadi 1;
+* Restore menggunakan konfigurasi yang telah dimodifikasi tersebut;
+* Reboot router.
 
 ### 3. Install Breed-web
 
-* Sambungkan koneksi telnet
+* Sambungkan koneksi telnet;
+    ```
+    telnet [alamat-ip-router]
+    ```
+
 * Login menggunakan informasi berikut:
     ```
-    telnet 192.168.1.1
-
     login        : admin
     password     : db40
     ```
 
-* Buka foder /tmp, kemudian salin file breed menggunakan wget.
+* Buka foder /tmp, kemudian salin file breed menggunakan wget;
     ```
     cd /tmp
 
     wget [url] -O uboot.bin
     ```
 
-* Flash uboot.bin ke Bootloader menggunakan mtd_write
+* Flash uboot.bin ke Bootloader menggunakan mtd_writ;
     ```
     mtd_write -r write uboot.bin Bootloader
     ```
 
 * Tunggu hingga proses selesai, router akan reboot.
+
+</dd>
+</dl>
+
+## 2. Menggunakan Script
+
+<dl>
+<dd>
+
+```diff
++ TODO
+```
+
+</dd>
+</dl>
 
 ### Selesai
 
