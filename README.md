@@ -17,6 +17,17 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ## Changelog :
 
+  #### [BoluWrt v6-R21.8.23](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v6-R21.8.23)
+
+    1. Based on Openwrt 21.02
+    2. Bootstrap sebagai tema default
+    3. Penambahan support WPA3
+    4. LED Sinyal LTE digunakan sebagai internet detector
+        > Berkedip merah jika tidak ada internet
+        > Berkedip biru jika internet tersedia
+    5. LED Power biru aktif secara default
+    6. Default password : bolu
+  
   #### [BoluWrt v5.8](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v5.8) - 03 Juni 2023
 
     1. Kernel 4.4.92;
