@@ -17,7 +17,7 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
 
 ## Changelog :
 
-  #### [BoluWrt v6-R21.8.23](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v6-R21.8.23)
+  #### [BoluWrt v6-R21.8.23](https://github.com/yHpgi/openwrt-bl201-boluwrt/releases/tag/v6-R21.8.23) - 31 Agustus 2023
 
     1. Based on Openwrt 21.02
     2. Bootstrap sebagai tema default
