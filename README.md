@@ -8,9 +8,9 @@ OpenWrt dengan kustomisasi kernel untuk memperbaiki masalah WiFi yang lemah.
   
 ### Disclaimer:
   
-```diff
+- Public archived. Project ini dihentikan hingga waktu yang belum ditentukan. Tidak menutup kemungkinan repository ini juga akan dihapus dikemudian hari.
 - Source kode ini outdated. Anda perlu memperbaiki banyak hal saat compile.
-```
+
 </div>
 
 **NOTES :** BL201 sekarang secara resmi didukung oleh [Lede](https://github.com/coolsnowwolf/lede), [Immortalwrt](https://github.com/immortalwrt/immortalwrt), dan [X-WRT](https://github.com/x-wrt/x-wrt).
